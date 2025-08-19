@@ -1,70 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bacchavaga – The Heritage of Olive Oil</title>
-  <style>
-    :root{--olive:#2f4f2f;--dark-olive:#274328;--gold:#c9a227;--cream:#f8f5e7;--ink:#232323}
-    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--cream),#fff);
-      color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    header{background:linear-gradient(180deg,var(--olive),var(--dark-olive));color:#fff;text-align:center;padding:24px 16px}
-    .logo{max-height:110px;display:block;margin:0 auto 10px}
-    header h1{margin:0 0 6px;font-weight:800}
-    header p{margin:0;opacity:.95}
-    .container{max-width:980px;margin:24px auto;padding:0 16px}
-    .card{background:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.08);padding:18px;margin:16px 0}
-    h2{color:var(--olive);margin:6px 0 10px}
-    .badges{margin-top:8px}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(47,79,47,.2);
-      background:rgba(47,79,47,.08);color:var(--olive);font-weight:600;margin:0 6px 6px 0}
-    footer{text-align:center;color:#555;padding:28px 12px 36px}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bacchavaga Olive Oil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Bacchavaga – Premium Organic Olive Oil">
+  <meta property="og:description" content="From Tunisia’s ancient olive groves to your table. Discover the story of Bacchavaga.">
+  <meta property="og:image" content="images/social-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bacchavaga.de">
+
 </head>
 <body>
   <header>
-    <img src="./images/logo.png" alt="Bacchavaga Logo" class="logo">
-    <h1>Bacchavaga – The Heritage of Olive Oil</h1>
-    <p>Organic extra virgin olive oil from Béja, Tunisia — hand-harvested, cold-extracted, and bottled at origin.</p>
+    <img src="images/logo.png" alt="Bacchavaga Logo" class="logo">
+    <nav>
+      <select id="languageSwitcher"></select>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <p>
-        For generations, our family has cultivated olive trees in Béja, Tunisia, using traditional hand-harvesting.
-        Bacchavaga celebrates this heritage by bringing you organic extra virgin olive oil,
-        pressed from the finest olives. Every drop reflects history, tradition, and purity.
-      </p>
-      <div class="badges">
-        <span class="badge">Cold-Extracted</span>
-        <span class="badge">Single Origin</span>
-        <span class="badge">First Harvest</span>
-        <span class="badge">Unfiltered</span>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Our Harvest</h2>
-      <p>Hand harvesting protects the fruit and the trees. Olives are collected on clean nets and rushed to the mill for low acidity and fresh aromas.</p>
-    </section>
-
-    <section class="card">
-      <h2>Family Legacy</h2>
-      <p>A family tradition—from grandfather to father to son—passing down trees and methods to ensure authentic flavor and respectful stewardship of our land.</p>
-    </section>
-
-    <section class="card">
-      <h2>Bottled at Origin</h2>
-      <p>Bottled in Tunisia to lock in freshness. Each batch is traceable to our groves, with minimal handling from tree to bottle.</p>
-    </section>
-
-    <section class="card">
-      <h2>Quality & Recognition</h2>
-      <p>Our meticulous approach results in a balanced, peppery finish and rich green-fruit notes. Bacchavaga is crafted to meet rigorous extra virgin standards and is continuously tested for quality.</p>
-    </section>
+  <main id="content">
+    <!-- Multilingual content will load here via script.js -->
   </main>
 
-  <footer>© <span id="y"></span> Bacchavaga. All rights reserved.</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <footer>
+    <p>© 2025 Bacchavaga – All Rights Reserved</p>
+    <p><a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a></p>
+  </footer>
 </body>
 </html>

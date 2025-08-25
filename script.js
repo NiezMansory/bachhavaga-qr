@@ -1,7 +1,8 @@
-// FULL multilingual copy + localized section titles
+/* ---------- FULL MULTI-LANGUAGE CONTENT + RENDER ---------- */
+
 const translations = {
   en: {
-    label: "English", dir: "ltr",
+    label: "EN", dir: "ltr",
     titles: {
       hero: "Premium Organic Olive Oil from Tunisia – The Heritage of Vaga",
       organic: "Organic Olive Trees",
@@ -11,99 +12,99 @@ const translations = {
       vision: "Our Vision",
       contact: "Contact"
     },
-    story: "For centuries, our family in Béja (the ancient city of Vaga) has cultivated olive trees on the rich Mediterranean soil of Tunisia. Passed down from father to son, our heritage is rooted in traditional farming – where patience, respect for nature, and knowledge of the land guide every step. Today, Bacchavaga carries this legacy forward, combining ancestral wisdom with modern bottling to bring you authentic olive oil that speaks of history, purity, and excellence.",
-    organic: "Tunisia is home to some of the world’s oldest organic olive trees, many of which still grow naturally without chemicals or artificial irrigation. Our groves are part of this unique ecosystem – producing olives rich in flavor and nutrients. Each drop of Bacchavaga olive oil reflects this authenticity: certified organic, pure, and cultivated with care.",
-    harvest: "Our olives are harvested by hand, using traditional methods passed down through generations. Farmers – including many women of our community – carefully pick each olive to preserve its integrity. Within hours, the olives are cold-pressed, ensuring the highest quality and freshness in every bottle.",
-    awards: "Tunisian olive oil is celebrated worldwide and has received numerous international awards in New York, London, Tokyo, and beyond. Bacchavaga is proud to be part of this story – representing Tunisia’s excellence in taste, quality, and tradition.",
-    sustainability: "We are committed to a sustainable future: protecting our soil, preserving water, and supporting the local farming community. Every bottle of Bacchavaga contributes to this mission – keeping traditions alive while ensuring future generations can continue to enjoy Tunisia’s olive heritage.",
-    vision: "Bacchavaga is more than olive oil – it is a story of family, heritage, and pride. From the ancient groves of Vaga to your table, we invite you to share in a journey that has been nurtured for centuries.",
-    contact: "For inquiries: info@bacchavaga.de"
+    story: `For centuries, our family in Béja (the ancient city of Vaga) has cultivated olive trees on the rich Mediterranean soil of Tunisia. Passed down from father to son, our heritage is rooted in traditional farming – where patience, respect for nature, and knowledge of the land guide every step. Today, Bacchavaga carries this legacy forward, combining ancestral wisdom with modern bottling to bring you authentic olive oil that speaks of history, purity, and excellence.`,
+    organic: `Tunisia is home to some of the world’s oldest organic olive trees, many of which still grow naturally without chemicals or artificial irrigation. Our groves are part of this unique ecosystem – producing olives rich in flavor and nutrients. Each drop of Bacchavaga olive oil reflects this authenticity: certified organic, pure, and cultivated with care.`,
+    harvest: `Our olives are harvested by hand, using traditional methods passed down through generations. Farmers – including many women of our community – carefully pick each olive to preserve its integrity. Within hours, the olives are cold-pressed, ensuring the highest quality and freshness in every bottle.`,
+    awards: `Tunisian olive oil is celebrated worldwide and has received numerous international awards in New York, London, Tokyo, and beyond. Bacchavaga is proud to be part of this story – representing Tunisia’s excellence in taste, quality, and tradition.`,
+    sustainability: `We are committed to a sustainable future: protecting our soil, preserving water, and supporting the local farming community. Every bottle of Bacchavaga contributes to this mission – keeping traditions alive while ensuring future generations can continue to enjoy Tunisia’s olive heritage.`,
+    vision: `Bacchavaga is more than olive oil – it is a story of family, heritage, and pride. From the ancient groves of Vaga to your table, we invite you to share in a journey that has been nurtured for centuries.`,
+    contact: `For inquiries: info@bacchavaga.de`
   },
 
   de: {
-    label: "Deutsch", dir: "ltr",
+    label: "DE", dir: "ltr",
     titles: {
       hero: "Premium Bio‑Olivenöl aus Tunesien – Das Erbe von Vaga",
-      organic: "Biologische Olivenbäume",
+      organic: "Organische Olivenbäume",
       harvest: "Traditionelle Ernte",
       awards: "Auszeichnungen & Anerkennung",
       sustainability: "Nachhaltigkeit",
       vision: "Unsere Vision",
       contact: "Kontakt"
     },
-    story: "Seit Jahrhunderten bewirtschaftet unsere Familie in Béja (der antiken Stadt Vaga) Olivenbäume auf dem fruchtbaren mediterranen Boden Tunesiens. Von Vater zu Sohn weitergegeben, wurzelt unser Erbe in der traditionellen Landwirtschaft – Geduld, Respekt vor der Natur und Wissen um das Land leiten jeden Schritt. Heute führt Bacchavaga dieses Vermächtnis fort und verbindet überliefertes Wissen mit moderner Abfüllung, um authentisches Olivenöl zu bieten, das von Geschichte, Reinheit und Exzellenz erzählt.",
-    organic: "Tunesien ist die Heimat einiger der ältesten Bio‑Olivenbäume der Welt, von denen viele noch immer natürlich ohne Chemikalien oder künstliche Bewässerung wachsen. Unsere Haine sind Teil dieses einzigartigen Ökosystems – sie liefern Oliven, die reich an Geschmack und Nährstoffen sind. Jeder Tropfen Bacchavaga steht für diese Authentizität: zertifiziert biologisch, rein und mit Sorgfalt kultiviert.",
-    harvest: "Unsere Oliven werden von Hand geerntet – mit traditionellen Methoden, die über Generationen weitergegeben wurden. Bäuerinnen aus unserer Gemeinschaft pflücken jede Olive behutsam, um ihre Unversehrtheit zu bewahren. Innerhalb weniger Stunden werden die Oliven kalt gepresst – für höchste Qualität und Frische in jeder Flasche.",
-    awards: "Tunesisches Olivenöl wird weltweit gefeiert und hat zahlreiche internationale Auszeichnungen in New York, London, Tokio und darüber hinaus erhalten. Bacchavaga ist stolz, Teil dieser Geschichte zu sein – ein Vertreter der tunesischen Exzellenz in Geschmack, Qualität und Tradition.",
-    sustainability: "Wir bekennen uns zu einer nachhaltigen Zukunft: Schutz unserer Böden, Schonung des Wassers und Unterstützung der lokalen Landwirtschaft. Jede Flasche Bacchavaga trägt zu dieser Mission bei – Traditionen lebendig zu halten und gleichzeitig zukünftigen Generationen Tunesiens Olivenerbe zu bewahren.",
-    vision: "Bacchavaga ist mehr als Olivenöl – es ist eine Geschichte von Familie, Erbe und Stolz. Von den alten Hainen Vagas bis auf Ihren Tisch laden wir Sie ein, eine über Jahrhunderte gepflegte Reise zu teilen.",
-    contact: "Anfragen: info@bacchavaga.de"
+    story: `Seit Jahrhunderten bewirtschaftet unsere Familie in Béja (der antiken Stadt Vaga) Olivenbäume im fruchtbaren mediterranen Boden Tunesiens. Von Vater zu Sohn weitergegeben, ist unser Erbe in der traditionellen Landwirtschaft verwurzelt – geprägt von Geduld, Respekt vor der Natur und tiefem Wissen um das Land. Heute führt Bacchavaga dieses Erbe fort, indem wir überliefte Weisheit mit moderner Abfüllung verbinden, um authentisches Olivenöl voller Geschichte, Reinheit und Exzellenz zu liefern.`,
+    organic: `Tunesien ist Heimat einiger der ältesten Bio‑Olivenbäume der Welt, die oft ohne Chemikalien oder künstliche Bewässerung gedeihen. Unsere Haine sind Teil dieses einzigartigen Ökosystems und bringen Oliven hervor, die reich an Geschmack und Nährstoffen sind. Jeder Tropfen Bacchavaga‑Olivenöl spiegelt diese Authentizität wider: bio‑zertifiziert, rein und mit Sorgfalt kultiviert.`,
+    harvest: `Unsere Oliven werden von Hand geerntet – nach Methoden, die seit Generationen weitergegeben werden. Bäuerinnen und Bauern, darunter viele Frauen unserer Gemeinschaft, pflücken jede Olive sorgfältig, um ihre Qualität zu bewahren. Innerhalb weniger Stunden werden die Früchte kaltgepresst – für höchste Frische in jeder Flasche.`,
+    awards: `Tunesisches Olivenöl wird weltweit gefeiert und hat zahlreiche internationale Auszeichnungen in New York, London, Tokio und darüber hinaus erhalten. Bacchavaga ist stolz, Teil dieser Geschichte zu sein – als Botschafter für Geschmack, Qualität und Tradition Tunesiens.`,
+    sustainability: `Wir setzen uns für eine nachhaltige Zukunft ein: Wir schützen den Boden, bewahren Wasser und unterstützen die lokale Landwirtschaft. Jede Flasche Bacchavaga trägt dazu bei – Traditionen zu bewahren und kommenden Generationen das tunesische Olivenerbe zu sichern.`,
+    vision: `Bacchavaga ist mehr als Olivenöl – es ist eine Familiengeschichte, ein Erbe und ein Stolz. Von den antiken Hainen von Vaga bis auf Ihren Tisch laden wir Sie ein, an einer seit Jahrhunderten gepflegten Reise teilzuhaben.`,
+    contact: `Anfragen: info@bacchavaga.de`
   },
 
   fr: {
-    label: "Français", dir: "ltr",
+    label: "FR", dir: "ltr",
     titles: {
       hero: "Huile d’olive biologique premium de Tunisie – L’héritage de Vaga",
       organic: "Oliviers biologiques",
       harvest: "Récolte traditionnelle",
-      awards: "Récompenses & reconnaissance",
+      awards: "Prix & Reconnaissance",
       sustainability: "Durabilité",
       vision: "Notre vision",
       contact: "Contact"
     },
-    story: "Depuis des siècles, notre famille à Béja (l’ancienne Vaga) cultive des oliviers sur les riches terres méditerranéennes de Tunisie. Transmis de père en fils, notre héritage repose sur l’agriculture traditionnelle – où la patience, le respect de la nature et la connaissance du terroir guident chaque geste. Aujourd’hui, Bacchavaga perpétue ce legs en mariant savoir ancestral et mise en bouteille moderne pour offrir une huile authentique qui porte l’empreinte de l’histoire, de la pureté et de l’excellence.",
-    organic: "La Tunisie abrite parmi les plus anciens oliviers biologiques au monde, dont beaucoup poussent encore naturellement, sans produits chimiques ni irrigation artificielle. Nos vergers font partie de cet écosystème unique – produisant des olives riches en saveurs et en nutriments. Chaque goutte d’huile d’olive Bacchavaga reflète cette authenticité : certifiée bio, pure et cultivée avec soin.",
-    harvest: "Nos olives sont récoltées à la main, selon des méthodes traditionnelles transmises de génération en génération. Des agricultrices de notre communauté sélectionnent chaque olive avec attention pour préserver son intégrité. En quelques heures, les olives sont pressées à froid, garantissant une qualité et une fraîcheur exceptionnelles dans chaque bouteille.",
-    awards: "L’huile d’olive tunisienne est célébrée dans le monde entier et a reçu de nombreuses distinctions internationales à New York, Londres, Tokyo et au‑delà. Bacchavaga est fière de faire partie de cette histoire – symbole de l’excellence tunisienne en matière de goût, de qualité et de tradition.",
-    sustainability: "Nous sommes engagés pour un avenir durable : protéger nos sols, préserver l’eau et soutenir la communauté agricole locale. Chaque bouteille Bacchavaga contribue à cette mission – maintenir les traditions vivantes tout en assurant aux générations futures la pérennité de l’héritage oléicole tunisien.",
-    vision: "Bacchavaga est plus qu’une huile d’olive – c’est une histoire de famille, d’héritage et de fierté. Des anciens oliveraies de Vaga jusqu’à votre table, nous vous invitons à partager un parcours nourri depuis des siècles.",
-    contact: "Contact : info@bacchavaga.de"
+    story: `Depuis des siècles, notre famille à Béja (l’ancienne ville de Vaga) cultive des oliviers sur les terres méditerranéennes de Tunisie. Transmis de père en fils, notre héritage s’enracine dans l’agriculture traditionnelle – patience, respect de la nature et connaissance du terroir. Aujourd’hui, Bacchavaga perpétue ce legs en mariant sagesse ancestrale et mise en bouteille moderne pour offrir une huile d’olive authentique, synonyme d’histoire, de pureté et d’excellence.`,
+    organic: `La Tunisie abrite certains des plus anciens oliviers biologiques au monde, poussant naturellement sans produits chimiques ni irrigation artificielle. Nos oliveraies appartiennent à cet écosystème unique et donnent des olives riches en arômes et nutriments. Chaque goutte d’huile Bacchavaga reflète cette authenticité : certifiée bio, pure et cultivée avec soin.`,
+    harvest: `Nos olives sont récoltées à la main selon des méthodes transmises de génération en génération. Les agriculteurs – dont de nombreuses femmes de notre communauté – cueillent chaque olive avec précaution pour préserver son intégrité. En quelques heures, elles sont pressées à froid afin de garantir une qualité et une fraîcheur optimales.`,
+    awards: `L’huile d’olive tunisienne est célébrée dans le monde entier et a reçu de nombreux prix internationaux à New York, Londres, Tokyo et au‑delà. Bacchavaga est fière de faire partie de cette histoire – l’excellence tunisienne en goût, qualité et tradition.`,
+    sustainability: `Nous œuvrons pour un avenir durable : protection des sols, préservation de l’eau et soutien à la communauté agricole locale. Chaque bouteille Bacchavaga contribue à cette mission, pour que les générations futures profitent de l’héritage oléicole tunisien.`,
+    vision: `Bacchavaga est plus qu’une huile d’olive – c’est une histoire de famille, d’héritage et de fierté. Des oliveraies antiques de Vaga jusqu’à votre table, partagez une aventure patiemment cultivée depuis des siècles.`,
+    contact: `Demandes : info@bacchavaga.de`
   },
 
   it: {
-    label: "Italiano", dir: "ltr",
+    label: "IT", dir: "ltr",
     titles: {
-      hero: "Olio d’oliva biologico premium dalla Tunisia – L’eredità di Vaga",
+      hero: "Olio extravergine biologico dalla Tunisia – L’eredità di Vaga",
       organic: "Ulivi biologici",
       harvest: "Raccolta tradizionale",
-      awards: "Premi e riconoscimenti",
+      awards: "Premi & Riconoscimenti",
       sustainability: "Sostenibilità",
       vision: "La nostra visione",
       contact: "Contatti"
     },
-    story: "Da secoli la nostra famiglia a Béja (l’antica Vaga) coltiva ulivi sulle fertili terre mediterranee della Tunisia. Tramandato di padre in figlio, il nostro patrimonio affonda nella tradizione agricola – dove pazienza, rispetto della natura e conoscenza del territorio guidano ogni passo. Oggi Bacchavaga porta avanti questa eredità unendo sapienza ancestrale e imbottigliamento moderno per offrirvi un olio autentico che parla di storia, purezza ed eccellenza.",
-    organic: "La Tunisia ospita alcuni degli ulivi biologici più antichi del mondo, molti dei quali crescono naturalmente senza sostanze chimiche o irrigazione artificiale. I nostri uliveti fanno parte di questo ecosistema unico – producono olive ricche di sapore e nutrienti. Ogni goccia di Bacchavaga riflette questa autenticità: certificata bio, pura e coltivata con cura.",
-    harvest: "Le nostre olive vengono raccolte a mano, con metodi tradizionali tramandati di generazione in generazione. Le contadine della nostra comunità selezionano ogni oliva per preservarne l’integrità. Nel giro di poche ore le olive vengono spremute a freddo, garantendo la massima qualità e freschezza in ogni bottiglia.",
-    awards: "L’olio d’oliva tunisino è celebrato in tutto il mondo e ha ricevuto numerosi premi internazionali a New York, Londra, Tokyo e oltre. Bacchavaga è orgogliosa di far parte di questa storia – a testimonianza dell’eccellenza tunisina in gusto, qualità e tradizione.",
-    sustainability: "Siamo impegnati per un futuro sostenibile: proteggere i nostri suoli, preservare l’acqua e sostenere la comunità agricola locale. Ogni bottiglia di Bacchavaga contribuisce a questa missione – mantenendo vive le tradizioni e garantendo alle generazioni future l’eredità olivicola della Tunisia.",
-    vision: "Bacchavaga è più di un olio – è una storia di famiglia, eredità e orgoglio. Dalle antiche terre di Vaga alla tua tavola, ti invitiamo a condividere un viaggio coltivato per secoli.",
-    contact: "Contatti: info@bacchavaga.de"
+    story: `Da secoli la nostra famiglia a Béja (l’antica Vaga) coltiva ulivi sul ricco suolo mediterraneo della Tunisia. Tramandato di padre in figlio, il nostro patrimonio affonda le radici nell’agricoltura tradizionale – pazienza, rispetto per la natura e conoscenza della terra. Oggi Bacchavaga porta avanti questo lascito unendo saggezza ancestrale e imbottigliamento moderno per offrirvi un olio autentico che parla di storia, purezza ed eccellenza.`,
+    organic: `La Tunisia ospita alcuni dei più antichi ulivi biologici al mondo, che crescono naturalmente senza prodotti chimici né irrigazione artificiale. I nostri uliveti fanno parte di questo ecosistema unico e producono olive ricche di gusto e nutrienti. Ogni goccia di Bacchavaga riflette questa autenticità: certificata bio, pura e coltivata con cura.`,
+    harvest: `Le nostre olive vengono raccolte a mano seguendo metodi tramandati da generazioni. I contadini – molte sono donne della nostra comunità – selezionano con attenzione ogni oliva per preservarne l’integrità. Nel giro di poche ore vengono spremute a freddo, garantendo la massima qualità e freschezza.`,
+    awards: `L’olio tunisino è celebrato in tutto il mondo e ha ricevuto numerosi premi internazionali a New York, Londra, Tokyo e oltre. Bacchavaga è orgogliosa di far parte di questa storia, rappresentando l’eccellenza della Tunisia in gusto, qualità e tradizione.`,
+    sustainability: `Ci impegniamo per un futuro sostenibile: proteggiamo il suolo, preserviamo l’acqua e sosteniamo l’agricoltura locale. Ogni bottiglia Bacchavaga contribuisce a questa missione, mantenendo vive le tradizioni e tutelando l’eredità olearia per le generazioni future.`,
+    vision: `Bacchavaga è più di un olio – è una storia di famiglia, eredità e orgoglio. Dalle antiche campagne di Vaga alla vostra tavola, vi invitiamo a condividere un percorso coltivato per secoli.`,
+    contact: `Richieste: info@bacchavaga.de`
   },
 
   es: {
-    label: "Español", dir: "ltr",
+    label: "ES", dir: "ltr",
     titles: {
       hero: "Aceite de oliva orgánico premium de Túnez – El legado de Vaga",
       organic: "Olivos orgánicos",
       harvest: "Cosecha tradicional",
-      awards: "Premios y reconocimientos",
+      awards: "Premios y Reconocimientos",
       sustainability: "Sostenibilidad",
       vision: "Nuestra visión",
       contact: "Contacto"
     },
-    story: "Durante siglos, nuestra familia en Béja (la antigua ciudad de Vaga) ha cultivado olivos en la rica tierra mediterránea de Túnez. Transmitido de padres a hijos, nuestro legado se basa en la agricultura tradicional: paciencia, respeto por la naturaleza y conocimiento del territorio en cada paso. Hoy, Bacchavaga honra este legado combinando la sabiduría ancestral con un envasado moderno para ofrecer un aceite auténtico que habla de historia, pureza y excelencia.",
-    organic: "Túnez alberga algunos de los olivos orgánicos más antiguos del mundo, muchos de los cuales crecen de forma natural sin químicos ni riego artificial. Nuestros olivares forman parte de este ecosistema único, produciendo aceitunas ricas en sabor y nutrientes. Cada gota de Bacchavaga refleja esta autenticidad: certificada orgánica, pura y cultivada con esmero.",
-    harvest: "Nuestras aceitunas se cosechan a mano siguiendo métodos tradicionales transmitidos de generación en generación. Agricultores —incluidas muchas mujeres de nuestra comunidad— recolectan cuidadosamente cada fruto para preservar su integridad. En pocas horas, las aceitunas se prensan en frío, asegurando la máxima calidad y frescura en cada botella.",
-    awards: "El aceite de oliva tunecino es reconocido en todo el mundo y ha recibido numerosos premios internacionales en Nueva York, Londres, Tokio y más. Bacchavaga se enorgullece de formar parte de esta historia: excelencia de Túnez en sabor, calidad y tradición.",
-    sustainability: "Estamos comprometidos con un futuro sostenible: proteger nuestros suelos, preservar el agua y apoyar a la comunidad agrícola local. Cada botella de Bacchavaga contribuye a esta misión — mantener vivas las tradiciones y asegurar que las futuras generaciones disfruten del legado olivarero de Túnez.",
-    vision: "Bacchavaga es más que aceite de oliva: es una historia de familia, herencia y orgullo. Desde los antiguos olivares de Vaga hasta tu mesa, te invitamos a compartir un viaje cultivado durante siglos.",
-    contact: "Contacto: info@bacchavaga.de"
+    story: `Durante siglos, nuestra familia en Béja (la antigua ciudad de Vaga) ha cultivado olivos en la rica tierra mediterránea de Túnez. Transmitido de padres a hijos, nuestro legado se basa en la agricultura tradicional: paciencia, respeto por la naturaleza y conocimiento del terreno. Hoy, Bacchavaga mantiene vivo este legado uniendo la sabiduría ancestral con el embotellado moderno para ofrecer un aceite auténtico que habla de historia, pureza y excelencia.`,
+    organic: `Túnez alberga algunos de los olivos orgánicos más antiguos del mundo, que crecen de forma natural sin químicos ni riego artificial. Nuestros olivares forman parte de este ecosistema único y producen aceitunas ricas en sabor y nutrientes. Cada gota de Bacchavaga refleja esta autenticidad: certificada orgánica, pura y cultivada con esmero.`,
+    harvest: `Nuestras aceitunas se recogen a mano con métodos transmitidos de generación en generación. Los agricultores –incluidas muchas mujeres de nuestra comunidad– seleccionan cada aceituna con cuidado para preservar su calidad. A las pocas horas se prensan en frío para garantizar máxima frescura en cada botella.`,
+    awards: `El aceite de oliva tunecino es reconocido en todo el mundo y ha recibido numerosos premios internacionales en Nueva York, Londres, Tokio y más. Bacchavaga se enorgullece de formar parte de esta historia, representando la excelencia de Túnez en sabor, calidad y tradición.`,
+    sustainability: `Estamos comprometidos con un futuro sostenible: protegemos el suelo, preservamos el agua y apoyamos a la comunidad agrícola local. Cada botella de Bacchavaga contribuye a esta misión, manteniendo vivas las tradiciones y asegurando el legado oleícola para las generaciones futuras.`,
+    vision: `Bacchavaga es más que aceite de oliva: es una historia de familia, herencia y orgullo. Desde los antiguos olivares de Vaga hasta tu mesa, te invitamos a compartir un camino cultivado durante siglos.`,
+    contact: `Consultas: info@bacchavaga.de`
   },
 
   tr: {
-    label: "Türkçe", dir: "ltr",
+    label: "TR", dir: "ltr",
     titles: {
-      hero: "Tunus’tan Organik Zeytinyağı – Vaga Mirası",
+      hero: "Tunus’tan Premium Organik Zeytinyağı – Vaga Mirası",
       organic: "Organik Zeytin Ağaçları",
       harvest: "Geleneksel Hasat",
       awards: "Ödüller ve Tanınırlık",
@@ -111,39 +112,39 @@ const translations = {
       vision: "Vizyonumuz",
       contact: "İletişim"
     },
-    story: "Yüzyıllardır ailemiz, Tunus’un Béja (antik Vaga) şehrinde zeytin ağaçlarını bereketli Akdeniz toprağında yetiştiriyor. Babadan oğula aktarılan mirasımız, sabır, doğaya saygı ve toprağı tanıma üzerine kurulu geleneksel tarıma dayanır. Bugün Bacchavaga, ata bilgisini modern şişeleme ile birleştirerek; tarih, saflık ve mükemmellik anlatan gerçek bir zeytinyağı sunuyor.",
-    organic: "Tunus, dünyanın en eski organik zeytin ağaçlarından bazılarına ev sahipliği yapar; çoğu hâlâ kimyasal ve yapay sulama olmadan doğal şekilde büyür. Zeytinliklerimiz bu benzersiz ekosistemin bir parçasıdır – aroması ve besin değerleri yüksek zeytinler üretir. Bacchavaga’nın her damlası bu özgünlüğü yansıtır: organik sertifikalı, saf ve özenle yetiştirilmiştir.",
-    harvest: "Zeytinlerimiz, nesiller boyunca aktarılan geleneksel yöntemlerle elle toplanır. Topluluğumuzdaki birçok kadın çiftçi de her bir zeytini itina ile toplar. Saatler içinde soğuk sıkım yapılır ve her şişede en yüksek kalite ile tazelik korunur.",
-    awards: "Tunus zeytinyağı dünya çapında kutlanır ve New York, Londra, Tokyo gibi merkezlerde pek çok uluslararası ödül almıştır. Bacchavaga, lezzet, kalite ve gelenek alanlarında Tunus’un mükemmelliğini temsil etmekten gurur duyar.",
-    sustainability: "Sürdürülebilir bir gelecek için çalışıyoruz: toprağı koruyor, suyu gözetiyor ve yerel çiftçi topluluğunu destekliyoruz. Bacchavaga’nın her şişesi bu misyona katkıda bulunur — gelenekleri yaşatırken gelecek nesillerin Tunus’un zeytin mirasından faydalanmasını sağlar.",
-    vision: "Bacchavaga sadece bir zeytinyağı değil — aile, miras ve gurur hikâyesidir. Vaga’nın kadim zeytinliklerinden sofranıza uzanan, yüzyıllardır özenle sürdürülen bu yolculuğa sizi de davet ediyoruz.",
-    contact: "İletişim: info@bacchavaga.de"
+    story: `Yüzyıllardır ailemiz, Tunus’un zengin Akdeniz topraklarında yer alan Béja’da (antik Vaga) zeytin ağaçları yetiştiriyor. Babadan oğula aktarılan mirasımız; sabır, doğaya saygı ve toprağı tanımaya dayalı geleneksel tarıma kök salmıştır. Bugün Bacchavaga, atalarımızın bilgisini modern şişeleme ile birleştirerek tarihe, saflığa ve mükemmelliğe seslenen gerçek zeytinyağını sunar.`,
+    organic: `Tunus, dünyanın en eski organik zeytin ağaçlarından bazılarına ev sahipliği yapar; birçoğu kimyasal kullanmadan ve yapay sulama olmadan doğal biçimde büyür. Bahçelerimiz bu eşsiz ekosistemin parçasıdır ve lezzet ile besin değeri yüksek zeytinler üretir. Bacchavaga’nın her damlası bu özgünlüğü yansıtır: organik sertifikalı, saf ve özenle yetiştirilmiştir.`,
+    harvest: `Zeytinlerimiz kuşaktan kuşağa aktarılan geleneksel yöntemlerle **elle** toplanır. Topluluğumuzdaki birçok kadın çiftçi de dâhil olmak üzere her zeytin dikkatle seçilir. Saatler içinde soğuk sıkım yapılır; böylece her şişede en yüksek kalite ve tazelik korunur.`,
+    awards: `Tunus zeytinyağı dünya çapında takdir görmekte ve New York, Londra, Tokyo gibi şehirlerde çok sayıda uluslararası ödül almaktadır. Bacchavaga, Tunus’un lezzet, kalite ve gelenekteki mükemmelliğini temsil etmekten gurur duyar.`,
+    sustainability: `Sürdürülebilir bir gelecek için çalışıyoruz: toprağı koruyor, suyu muhafaza ediyor ve yerel çiftçi topluluğunu destekliyoruz. Bacchavaga’nın her şişesi bu misyona katkı sağlar; gelenekleri yaşatır ve zeytin mirasının gelecek nesillere aktarılmasına yardımcı olur.`,
+    vision: `Bacchavaga sadece bir zeytinyağı değil; aile, miras ve gurur hikâyesidir. Vaga’nın kadim zeytinliklerinden sofranıza uzanan, yüzyıllardır özenle sürdürülen bu yolculuğa sizi de davet ediyoruz.`,
+    contact: `İletişim: info@bacchavaga.de`
   },
 
   nl: {
-    label: "Nederlands", dir: "ltr",
+    label: "NL", dir: "ltr",
     titles: {
-      hero: "Premium biologische olijfolie uit Tunesië – Het erfgoed van Vaga",
+      hero: "Premium biologische olijfolie uit Tunesië – De erfenis van Vaga",
       organic: "Biologische olijfbomen",
       harvest: "Traditionele oogst",
-      awards: "Prijzen & erkenning",
+      awards: "Prijzen & Erkenning",
       sustainability: "Duurzaamheid",
       vision: "Onze visie",
       contact: "Contact"
     },
-    story: "Al eeuwenlang cultiveert onze familie in Béja (het oude Vaga) olijfbomen op de rijke mediterrane bodem van Tunesië. Van vader op zoon doorgegeven, is ons erfgoed geworteld in traditionele landbouw — met geduld, respect voor de natuur en kennis van het land. Vandaag zet Bacchavaga die erfenis voort en verenigt eeuwenoude kennis met moderne botteling om authentieke olijfolie te brengen die spreekt van geschiedenis, puurheid en excellentie.",
-    organic: "Tunesië is de thuisbasis van enkele van ’s werelds oudste biologische olijfbomen, die nog steeds natuurlijk groeien — zonder chemie of kunstmatige irrigatie. Onze boomgaarden maken deel uit van dit unieke ecosysteem en leveren olijven die rijk zijn aan smaak en voedingsstoffen. Elke druppel Bacchavaga weerspiegelt die authenticiteit: biologisch gecertificeerd, puur en met zorg geteeld.",
-    harvest: "Onze olijven worden met de hand geplukt volgens traditionele methoden die generaties lang zijn doorgegeven. Boeren — waaronder veel vrouwen uit onze gemeenschap — plukken elke olijf zorgvuldig om de kwaliteit te bewaren. Binnen enkele uren worden de olijven koud geperst, voor topkwaliteit en frisheid in elke fles.",
-    awards: "Tunesische olijfolie wordt wereldwijd gevierd en heeft talloze internationale prijzen gewonnen in New York, Londen, Tokio en daarbuiten. Bacchavaga is trots deel uit te maken van dat verhaal — een ambassadeur van Tunesische uitmuntendheid in smaak, kwaliteit en traditie.",
-    sustainability: "We zetten ons in voor een duurzame toekomst: bescherming van de bodem, behoud van water en steun aan de lokale landbouwgemeenschap. Elke fles Bacchavaga draagt bij aan die missie — tradities levend houden en toekomstige generaties laten genieten van het Tunesische olijferfgoed.",
-    vision: "Bacchavaga is meer dan olijfolie — het is een verhaal van familie, erfgoed en trots. Van de oude gaarden van Vaga tot op uw tafel: een reis die al eeuwen wordt gekoesterd.",
-    contact: "Contact: info@bacchavaga.de"
+    story: `Al eeuwenlang cultiveert onze familie in Béja (de antieke stad Vaga) olijfbomen op de vruchtbare mediterrane bodem van Tunesië. Van vader op zoon doorgegeven, is ons erfgoed geworteld in traditionele landbouw – met geduld, respect voor de natuur en kennis van het land. Vandaag zet Bacchavaga dit voort door eeuwenoude wijsheid te combineren met moderne botteling voor een authentieke olijfolie die staat voor geschiedenis, zuiverheid en excellentie.`,
+    organic: `Tunesië herbergt enkele van ’s werelds oudste biologische olijfbomen, die vaak natuurlijk groeien zonder chemicaliën of kunstmatige irrigatie. Onze boomgaarden maken deel uit van dit unieke ecosysteem en leveren olijven boordevol smaak en voedingsstoffen. Elke druppel Bacchavaga weerspiegelt deze echtheid: biologisch gecertificeerd, puur en met zorg geteeld.`,
+    harvest: `Onze olijven worden met de hand geplukt volgens methoden die generaties lang zijn doorgegeven. Boeren – waaronder veel vrouwen uit onze gemeenschap – kiezen elke olijf zorgvuldig om de kwaliteit te behouden. Binnen enkele uren worden ze koud geperst voor maximale versheid in elke fles.`,
+    awards: `Tunesische olijfolie wordt wereldwijd geprezen en heeft talloze internationale prijzen gewonnen in New York, Londen, Tokio en daarbuiten. Bacchavaga is er trots op deel uit te maken van dit verhaal – als vertegenwoordiger van Tunesië’s uitmuntendheid in smaak, kwaliteit en traditie.`,
+    sustainability: `Wij zetten ons in voor een duurzame toekomst: bescherming van de bodem, behoud van water en steun aan de lokale boeren. Elke fles Bacchavaga draagt bij aan deze missie, zodat toekomstige generaties kunnen blijven genieten van het Tunesische olijferfgoed.`,
+    vision: `Bacchavaga is meer dan olijfolie – het is een verhaal van familie, erfgoed en trots. Van de eeuwenoude olijfgaarden van Vaga tot aan uw tafel: we nodigen u uit om mee te reizen op dit pad dat al eeuwen wordt gekoesterd.`,
+    contact: `Vragen: info@bacchavaga.de`
   },
 
   pl: {
-    label: "Polski", dir: "ltr",
+    label: "PL", dir: "ltr",
     titles: {
-      hero: "Organiczna oliwa z oliwek premium z Tunezji – Dziedzictwo Vaga",
+      hero: "Organiczna oliwa premium z Tunezji – Dziedzictwo Vaga",
       organic: "Organiczne drzewa oliwne",
       harvest: "Tradycyjne zbiory",
       awards: "Nagrody i wyróżnienia",
@@ -151,116 +152,124 @@ const translations = {
       vision: "Nasza wizja",
       contact: "Kontakt"
     },
-    story: "Od wieków nasza rodzina w Béja (starożytnej Vadze) uprawia drzewa oliwne na żyznej, śródziemnomorskiej ziemi Tunezji. Przekazywana z ojca na syna tradycja opiera się na cierpliwości, szacunku dla natury i znajomości ziemi. Dziś Bacchavaga kontynuuje to dziedzictwo, łącząc mądrość przodków z nowoczesnym rozlewem, aby dostarczać autentyczną oliwę mówiącą o historii, czystości i doskonałości.",
-    organic: "Tunezja jest domem jednych z najstarszych na świecie organicznych drzew oliwnych, które wciąż rosną naturalnie — bez chemii i sztucznego nawadniania. Nasze gaje są częścią tego wyjątkowego ekosystemu, dając oliwki bogate w smak i wartości odżywcze. Każda kropla Bacchavaga odzwierciedla tę autentyczność: certyfikowana, czysta i uprawiana z troską.",
-    harvest: "Oliwki zbieramy ręcznie, stosując tradycyjne metody przekazywane z pokolenia na pokolenie. Rolnicy — w tym wiele kobiet z naszej społeczności — starannie zbierają każdy owoc, by zachować jego integralność. W ciągu kilku godzin oliwki są tłoczone na zimno, co gwarantuje najwyższą jakość i świeżość w każdej butelce.",
-    awards: "Tunezyjska oliwa z oliwek jest ceniona na całym świecie i zdobyła liczne nagrody międzynarodowe w Nowym Jorku, Londynie, Tokio i nie tylko. Bacchavaga z dumą współtworzy tę opowieść — reprezentując tunezyjską doskonałość w smaku, jakości i tradycji.",
-    sustainability: "Dążymy do zrównoważonej przyszłości: chronimy glebę, oszczędzamy wodę i wspieramy lokalnych rolników. Każda butelka Bacchavaga wspiera tę misję — zachowując tradycje i dbając o to, by przyszłe pokolenia mogły cieszyć się tunezyjskim dziedzictwem oliwnym.",
-    vision: "Bacchavaga to więcej niż oliwa — to historia rodziny, dziedzictwa i dumy. Od starożytnych gajów Vagi po Twój stół — zapraszamy do uczestnictwa w podróży pielęgnowanej od stuleci.",
-    contact: "Kontakt: info@bacchavaga.de"
+    story: `Od wieków nasza rodzina w Béja (starożytna Vaga) uprawia drzewa oliwne na żyznych, śródziemnomorskich ziemiach Tunezji. Dziedzictwo przekazywane z ojca na syna wyrasta z tradycyjnego rolnictwa – cierpliwości, szacunku do natury i znajomości ziemi. Dziś Bacchavaga kontynuuje tę tradycję, łącząc mądrość przodków z nowoczesnym rozlewem, aby dostarczać autentyczną oliwę mówiącą o historii, czystości i doskonałości.`,
+    organic: `Tunezja jest domem jednych z najstarszych organicznych drzew oliwnych na świecie, rosnących naturalnie – bez chemii i sztucznego nawadniania. Nasze gaje są częścią tego unikalnego ekosystemu i dają oliwki bogate w smak oraz składniki odżywcze. Każda kropla Bacchavaga odzwierciedla tę autentyczność: certyfikowana, czysta i uprawiana z troską.`,
+    harvest: `Oliwki zbieramy ręcznie, zgodnie z metodami przekazywanymi z pokolenia na pokolenie. Rolnicy – w tym wiele kobiet – starannie zbierają każdą oliwkę, aby zachować jej jakość. W ciągu kilku godzin są tłoczone na zimno, co gwarantuje świeżość i najwyższą jakość w każdej butelce.`,
+    awards: `Tunezyjska oliwa z oliwek jest ceniona na całym świecie i zdobywa liczne międzynarodowe nagrody w Nowym Jorku, Londynie, Tokio i nie tylko. Bacchavaga z dumą jest częścią tej historii – reprezentując tunezyjską doskonałość w smaku, jakości i tradycji.`,
+    sustainability: `Dbamy o zrównoważoną przyszłość: chronimy glebę, oszczędzamy wodę i wspieramy lokalną społeczność rolniczą. Każda butelka Bacchavaga wspiera tę misję – podtrzymując tradycje i przekazując oliwne dziedzictwo kolejnym pokoleniom.`,
+    vision: `Bacchavaga to coś więcej niż oliwa – to opowieść o rodzinie, dziedzictwie i dumie. Od starożytnych gajów Vaga aż po Twój stół – zapraszamy do wspólnej podróży pielęgnowanej przez stulecia.`,
+    contact: `Kontakt: info@bacchavaga.de`
   },
 
   ru: {
-    label: "Русский", dir: "ltr",
+    label: "RU", dir: "ltr",
     titles: {
-      hero: "Премиальное органическое оливковое масло из Туниса — Наследие Вага",
+      hero: "Премиальное органическое оливковое масло из Туниса — Наследие Ваґи",
       organic: "Органические оливковые деревья",
       harvest: "Традиционный сбор",
       awards: "Награды и признание",
       sustainability: "Устойчивое развитие",
-      vision: "Наше видение",
+      vision: "Наша философия",
       contact: "Контакты"
     },
-    story: "На протяжении веков наша семья в Бедже (древнем городе Вага) выращивает оливковые деревья на плодородной средиземноморской земле Туниса. Наследие, передаваемое от отца к сыну, основано на традиционном земледелии — терпении, уважении к природе и знании земли. Сегодня Bacchavaga продолжает эту традицию, соединяя мудрость предков с современным розливом, чтобы дарить подлинное масло, говорящее о истории, чистоте и превосходстве.",
-    organic: "В Тунисе растут одни из самых древних в мире органических оливковых деревьев, многие из которых до сих пор развиваются естественно — без химии и искусственного орошения. Наши рощи — часть этой уникальной экосистемы и дают маслины, богатые вкусом и питательными веществами. Каждая капля Bacchavaga отражает эту аутентичность: сертифицированная органика, чистота и бережное выращивание.",
-    harvest: "Наши маслины собираются вручную по традиционным методам, передаваемым из поколения в поколение. Фермеры — в том числе многие женщины нашей общины — аккуратно снимают каждую маслину, сохраняя её целостность. В течение нескольких часов после сбора проводится холодное прессование — высочайшее качество и свежесть в каждой бутылке.",
-    awards: "Тунисское оливковое масло признано во всём мире и удостоено множества международных наград в Нью‑Йорке, Лондоне, Токио и далее. Bacchavaga гордится тем, что является частью этой истории — олицетворяя тунисское совершенство во вкусе, качестве и традиции.",
-    sustainability: "Мы привержены устойчивому будущему: защищаем почву, бережём воду и поддерживаем местное фермерское сообщество. Каждая бутылка Bacchavaga помогает сохранять традиции и обеспечивает преемственность оливкового наследия Туниса для будущих поколений.",
-    vision: "Bacchavaga — это больше, чем масло: это история семьи, наследия и гордости. От древних рощ Вага — к вашему столу. Приглашаем разделить путь, который бережно хранится веками.",
-    contact: "Контакт: info@bacchavaga.de"
+    story: `На протяжении столетий наша семья в Бедже (древней Ваґе) выращивает оливковые деревья на плодородной средиземноморской земле Туниса. Передаваемое из поколения в поколение наследие основано на традиционном земледелии — терпении, уважении к природе и знании земли. Сегодня Bacchavaga продолжает эту линию, сочетая мудрость предков с современным розливом, чтобы дарить подлинное масло — олицетворение истории, чистоты и качества.`,
+    organic: `Тунис — родина одних из самых древних органических оливковых деревьев. Многие из них растут естественно, без химии и искусственного орошения. Наши рощи — часть этой уникальной экосистемы и дают оливки, богатые вкусом и питательными веществами. Каждая капля Bacchavaga — это подлинность: сертифицированный органический продукт, выращенный с заботой.`,
+    harvest: `Мы собираем оливки вручную по традициям, переданным через поколения. Фермеры — среди них много женщин — аккуратно собирают каждый плод, сохраняя его целостность. В течение нескольких часов после сбора оливки холодного отжима — для максимальной свежести и качества в каждой бутылке.`,
+    awards: `Тунисское оливковое масло высоко ценится во всем мире и удостоено множества международных наград в Нью‑Йорке, Лондоне, Токио и других городах. Bacchavaga гордится тем, что является частью этой истории — олицетворяя превосходство Туниса во вкусе, качестве и традициях.`,
+    sustainability: `Мы привержены устойчивому будущему: защищаем почву, бережем воду и поддерживаем местные фермерские общины. Каждая бутылка Bacchavaga способствует сохранению традиций и передачe оливкового наследия будущим поколениям.`,
+    vision: `Bacchavaga — это больше, чем масло: это история семьи, наследия и гордости. От древних рощ Ваґи — к вашему столу. Приглашаем разделить путь, который бережно продолжается веками.`,
+    contact: `Запросы: info@bacchavaga.de`
   },
 
   ar: {
-    label: "العربية", dir: "rtl",
+    label: "AR", dir: "rtl",
     titles: {
       hero: "زيت زيتون عضوي فاخر من تونس — إرث فاغا",
-      organic: "أشجار الزيتون العضوية",
-      harvest: "القطاف التقليدي",
-      awards: "الجوائز والتقدير",
+      organic: "أشجار زيتون عضوية",
+      harvest: "جني تقليدي",
+      awards: "جوائز وتقدير",
       sustainability: "الاستدامة",
       vision: "رؤيتنا",
-      contact: "تواصل"
+      contact: "تواصل معنا"
     },
-    story: "لأجيال طويلة، اعتنت عائلتنا في باجة (مدينة فاغا القديمة) بأشجار الزيتون على التربة المتوسطية الخصبة في تونس. انتقل هذا الإرث من الأب إلى الابن، قائمًا على الزراعة التقليدية حيث الصبر واحترام الطبيعة ومعرفة الأرض توجه كل خطوة. واليوم تواصل Bacchavaga هذا الإرث، فتجمع حكمة الأسلاف مع التعبئة الحديثة لتقدم زيت زيتون أصيلًا يعبّر عن التاريخ والنقاء والتميّز.",
-    organic: "تحتضن تونس بعض أقدم أشجار الزيتون العضوية في العالم، ولا تزال كثير منها تنمو طبيعيًا دون مواد كيميائية أو ريّ اصطناعي. بساتيننا جزء من هذا النظام البيئي الفريد، وتنتج ثمارًا غنية بالنكهة والعناصر الغذائية. كل قطرة من Bacchavaga تعكس هذه الأصالة: عضوي مُعتمد، نقي ومُعتنى به بعناية.",
-    harvest: "نقطف الزيتون يدويًا وفق طرق تقليدية توارثناها عبر الأجيال. يشارك العديد من نساء مجتمعنا في انتقاء كل ثمرة بعناية للحفاظ على جودتها. خلال ساعات قليلة تُعصر الثمار على البارد لضمان أعلى درجات الجودة والطزاجة في كل زجاجة.",
-    awards: "يحظى زيت الزيتون التونسي بتقدير عالمي ونال جوائز دولية عديدة في نيويورك ولندن وطوكيو وغيرها. وتفخر Bacchavaga بكونها جزءًا من هذه الحكاية — ممثلةً تميّز تونس في المذاق والجودة والتقاليد.",
-    sustainability: "نلتزم بمستقبل مستدام: نحمي التربة، ونحافظ على المياه، وندعم مجتمع المزارعين المحلي. كل زجاجة من Bacchavaga تسهم في هذه الرسالة — إبقاء التقاليد حيّة مع صون إرث الزيتون التونسي للأجيال القادمة.",
-    vision: "Bacchavaga ليست مجرد زيت؛ بل هي قصة عائلة وتراث وفخر. من بساتين فاغا العتيقة إلى مائدتكم — ندعوكم لمشاركة رحلة صيغت عبر القرون.",
-    contact: "للاستفسارات: info@bacchavaga.de"
+    story: `لِقرونٍ طويلة دأبت عائلتنا في باجة (مدينة فاغا القديمة) على زراعة أشجار الزيتون في تربة تونس المتوسطية الخصبة. إرثُنا، الذي انتقل من الآباء إلى الأبناء، متجذّر في الزراعة التقليدية القائمة على الصبر واحترام الطبيعة ومعرفة الأرض. اليوم تواصل Bacchavaga هذا الإرث بدمج حكمة الأجداد مع التعبئة الحديثة لنقدم زيتًا أصيلاً يعبّر عن التاريخ والنقاء والتميّز.`,
+    organic: `تضم تونس بعضًا من أقدم أشجار الزيتون العضوية في العالم، والتي تنمو طبيعيًا من دون مواد كيميائية أو ريّ اصطناعي. بساتيننا جزء من هذا النظام البيئي الفريد وتنتج زيتونًا غنيًا بالنكهة والعناصر الغذائية. كل قطرة من زيت Bacchavaga تعكس هذه الأصالة: معتمد عضويًا ونقي ومُعتنى به بعناية.`,
+    harvest: `نَجني الزيتون يدويًا وفق أساليب متوارثة عبر الأجيال. ويشارك العديد من نساء مجتمعنا في قطف كل ثمرة بعناية للحفاظ على جودتها. خلال ساعات قليلة يُعصر الزيتون على البارد لضمان أعلى درجات الجودة والطزاجة في كل زجاجة.`,
+    awards: `يحظى زيت الزيتون التونسي بتقدير عالمي ونال جوائز دولية عديدة في نيويورك ولندن وطوكيو وغيرها. وتفخر Bacchavaga بكونها جزءًا من هذه القصة ممثلةً تميز تونس في المذاق والجودة والتقاليد.`,
+    sustainability: `نلتزم بمستقبل مستدام: نحمي التربة ونحافظ على المياه وندعم المزارعين المحليين. كل زجاجة من Bacchavaga تُسهم في هذه الرسالة، محافظةً على التقاليد وضامنةً استمرار إرث الزيتون للأجيال القادمة.`,
+    vision: `Bacchavaga ليست مجرد زيت زيتون؛ إنها قصة عائلة وإرث وفخر. من بساتين فاغا العتيقة إلى موائدكم، ندعوكم لمشاركة رحلةٍ اعتنينا بها عبر القرون.`,
+    contact: `للاستفسار: info@bacchavaga.de`
   }
 };
 
-// Elements
+/* ---------- DEFENSIVE RENDER / WIRING ---------- */
+
+const $ = id => document.getElementById(id);
 const els = {
-  hHero: document.getElementById("h-hero"),
-  tHero: document.getElementById("t-hero"),
-  pStory: document.getElementById("p-story"),
-  tOrganic: document.getElementById("t-organic"),
-  pOrganic: document.getElementById("p-organic"),
-  tHarvest: document.getElementById("t-harvest"),
-  pHarvest: document.getElementById("p-harvest"),
-  tAwards: document.getElementById("t-awards"),
-  pAwards: document.getElementById("p-awards"),
-  tSust: document.getElementById("t-sustainability"),
-  pSust: document.getElementById("p-sustainability"),
-  tVision: document.getElementById("t-vision"),
-  pVision: document.getElementById("p-vision"),
-  tContact: document.getElementById("t-contact"),
-  pContact: document.getElementById("p-contact")
+  hHero: $("h-hero"),
+  tHero: $("t-hero"),          pStory: $("p-story"),
+  tOrganic: $("t-organic"),    pOrganic: $("p-organic"),
+  tHarvest: $("t-harvest"),    pHarvest: $("p-harvest"),
+  tAwards: $("t-awards"),      pAwards: $("p-awards"),
+  tSust: $("t-sustainability"),pSust: $("p-sustainability"),
+  tVision: $("t-vision"),      pVision: $("p-vision"),
+  tContact: $("t-contact"),    pContact: $("p-contact")
 };
 
-// Language select
-const sel = document.getElementById("languageSwitcher");
-Object.entries(translations).forEach(([code, t]) => {
-  const opt = document.createElement("option");
-  opt.value = code;
-  opt.textContent = t.label;
-  sel.appendChild(opt);
-});
+function set(node, text, isHTML=false){
+  if(!node) return; 
+  if(isHTML) node.innerHTML = text;
+  else node.textContent = text;
+}
+
+function buildLanguageMenu(sel){
+  sel.innerHTML = "";
+  Object.entries(translations).forEach(([code, t])=>{
+    const opt = document.createElement("option");
+    opt.value = code;
+    opt.textContent = t.label || code.toUpperCase();
+    sel.appendChild(opt);
+  });
+}
 
 function render(lang){
   const t = translations[lang] || translations.en;
   document.documentElement.lang = lang;
   document.documentElement.dir = t.dir || "ltr";
 
-  els.hHero.textContent = t.titles.hero;
-  els.tHero.textContent = t.titles.hero;
-  els.pStory.textContent = t.story;
+  set(els.hHero,   t.titles.hero);
+  set(els.tHero,   t.titles.hero);
+  set(els.pStory,  t.story);
 
-  els.tOrganic.textContent = t.titles.organic;
-  els.pOrganic.textContent = t.organic;
+  set(els.tOrganic, t.titles.organic);
+  set(els.pOrganic, t.organic);
 
-  els.tHarvest.textContent = t.titles.harvest;
-  els.pHarvest.textContent = t.harvest;
+  set(els.tHarvest, t.titles.harvest);
+  set(els.pHarvest, t.harvest);
 
-  els.tAwards.textContent = t.titles.awards;
-  els.pAwards.textContent = t.awards;
+  set(els.tAwards,  t.titles.awards);
+  set(els.pAwards,  t.awards);
 
-  els.tSust.textContent = t.titles.sustainability;
-  els.pSust.textContent = t.sustainability;
+  set(els.tSust,    t.titles.sustainability);
+  set(els.pSust,    t.sustainability);
 
-  els.tVision.textContent = t.titles.vision;
-  els.pVision.textContent = t.vision;
+  set(els.tVision,  t.titles.vision);
+  set(els.pVision,  t.vision);
 
-  els.tContact.textContent = t.titles.contact;
-  els.pContact.innerHTML = t.contact.replace("info@bacchavaga.de", '<a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a>');
+  const contactHTML = (t.contact || "info@bacchavaga.de")
+    .replace("info@bacchavaga.de", '<a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a>');
+  set(els.tContact, t.titles.contact);
+  set(els.pContact, contactHTML, true);
 
-  // Persist
-  try { localStorage.setItem("lang", lang); } catch(e){}
+  try{ localStorage.setItem("lang", lang); }catch(e){}
 }
 
-const saved = (()=>{ try{return localStorage.getItem("lang");}catch(e){return null;} })();
-render(saved || "en");
-sel.value = saved || "en";
-sel.addEventListener("change", e => render(e.target.value));
+(function init(){
+  const sel = $("languageSwitcher");
+  if(!sel){ console.error("languageSwitcher not found"); return; }
+  buildLanguageMenu(sel);
+  const saved = (()=>{ try{return localStorage.getItem("lang");}catch(e){return null;} })();
+  render(saved || "en");
+  sel.value = saved || "en";
+  sel.addEventListener("change", e => render(e.target.value));
+})();

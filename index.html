@@ -1,41 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bacchavaga Olive Oil</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 
-  <!-- Favicon -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles & Script -->
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <!-- Favicon / Social -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
-
-  <!-- Open Graph / Social Preview -->
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <meta property="og:title" content="Bacchavaga – Premium Organic Olive Oil">
   <meta property="og:description" content="From Tunisia’s ancient olive groves to your table. Discover the story of Bacchavaga.">
   <meta property="og:image" content="images/social-preview.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bacchavaga.de">
-
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Bacchavaga Logo" class="logo">
-    <nav>
-      <select id="languageSwitcher"></select>
-    </nav>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap">
+      <img class="logo" src="images/logo.png" alt="Bacchavaga logo">
+      <div class="spacer"></div>
+      <label class="lang-label" for="languageSwitcher">Language</label>
+      <select id="languageSwitcher" aria-label="Language"></select>
+    </div>
   </header>
 
-  <main id="content">
-    <!-- Multilingual content will load here via script.js -->
+  <!-- Hero -->
+  <section class="hero" style="background-image:url('images/hero.jpg')">
+    <div class="overlay">
+      <h1 id="h-hero" class="title">Premium Organic Olive Oil from Tunisia – The Heritage of Vaga</h1>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main class="wrap">
+    <!-- Story -->
+    <section class="section block">
+      <div class="text">
+        <h2 id="t-hero">Premium Organic Olive Oil from Tunisia – The Heritage of Vaga</h2>
+        <p id="p-story"></p>
+      </div>
+      <figure class="media">
+        <img src="images/story.jpg" alt="Family olive farming heritage in Béja">
+      </figure>
+    </section>
+
+    <!-- Organic -->
+    <section class="section block reverse">
+      <div class="text">
+        <h2 id="t-organic">Organic Olive Trees</h2>
+        <p id="p-organic"></p>
+      </div>
+      <figure class="media">
+        <img src="images/organic.jpg" alt="Organic Tunisian olive trees">
+      </figure>
+    </section>
+
+    <!-- Harvest -->
+    <section class="section block">
+      <div class="text">
+        <h2 id="t-harvest">Traditional Harvest</h2>
+        <p id="p-harvest"></p>
+      </div>
+      <figure class="media">
+        <img src="images/harvest.jpg" alt="Hand harvest with women farmers">
+      </figure>
+    </section>
+
+    <!-- Awards -->
+    <section class="section block reverse">
+      <div class="text">
+        <h2 id="t-awards">Awards & Recognition</h2>
+        <p id="p-awards"></p>
+      </div>
+      <figure class="media">
+        <img src="images/awards.jpg" alt="International olive oil awards">
+      </figure>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="section block">
+      <div class="text">
+        <h2 id="t-sustainability">Sustainability</h2>
+        <p id="p-sustainability"></p>
+      </div>
+      <figure class="media">
+        <img src="images/sustainability.jpg" alt="Sustainable farming in Tunisia">
+      </figure>
+    </section>
+
+    <!-- Vision -->
+    <section class="section block reverse">
+      <div class="text">
+        <h2 id="t-vision">Our Vision</h2>
+        <p id="p-vision"></p>
+      </div>
+      <figure class="media">
+        <img src="images/vision.jpg" alt="From Vaga to your table">
+      </figure>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-card">
+      <h2 id="t-contact">Contact</h2>
+      <p id="p-contact">For inquiries: <a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a></p>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Bacchavaga – All Rights Reserved</p>
-    <p><a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a></p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap footgrid">
+      <small>© 2025 Bacchavaga — Mansory Global SARL · Béja (Vaga), Tunisia. All Rights Reserved.</small>
+    </div>
   </footer>
 </body>
 </html>
-

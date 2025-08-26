@@ -290,3 +290,13 @@ small{
   .hero{ min-height: clamp(380px, 60vh, 520px); }
   .hero .hero-img{ object-position: center 8%; }
 }
+/* Desktop hero adjustment only */
+@media (min-width: 1025px){
+  .hero {
+    min-height: 68vh;              /* Taller so logo + tree fit in view */
+  }
+  .hero .hero-img {
+    object-fit: cover;             /* Keep premium full-bleed look */
+    object-position: center 6%;    /* Shift upward so logo sits closer to top */
+  }
+}

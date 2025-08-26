@@ -1,115 +1,271 @@
+/* =========================================================================
+   Bacchavaga QR Microsite Styles
+   Color scheme: parchment gold (#E0C27E) + deep olive (#1F3A29)
+   Fonts: Cinzel (headings), Inter (body)
+   -------------------------------------------------------------------------
+   QUICK NAV (approx. line numbers once pasted):
+     01–40   Base / tokens
+     41–96   Header (logo + language)
+     97–158  HERO (height/crop + hide H1 over image)
+     159–266 Layout: sections, cards, media images
+     267–318 Typography
+     319–366 Utilities / footer
+     367–420 Responsive tweaks
+   ========================================================================= */
+
+
+/* 01 ────────────────────────────────────────────────────────────────── */
+/* Base tokens */
 :root{
-  --bg:#E0C27E;     /* parchment gold */
-  --ink:#1F3A29;    /* deep olive green */
-  --ink-soft:#2a4c3a;
-  --panel: rgba(255,255,255,.28);
-  --maxw:1100px;
+  --parchment: #E0C27E;
+  --parchment-soft: #e9d39e;
+  --parchment-ink: #d6b66b;
+  --olive: #1F3A29;
+  --olive-ink: #163021;
+  --shadow: 0 10px 30px rgba(31,58,41,0.18);
+  --radius-lg: 18px;
+  --radius-md: 12px;
 }
 
-/* Base */
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
+*{ box-sizing: border-box; }
+
+html, body{
+  height: 100%;
+}
+
 body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  line-height:1.7;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  margin: 0;
+  background: var(--parchment);
+  color: var(--olive);
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-h1,h2{font-family:Cinzel, serif; color:var(--ink); letter-spacing:.02em}
-h1{font-size:clamp(26px,4.8vw,46px); margin:0}
-h2{font-size:clamp(20px,3.6vw,30px); margin:.2rem 0 .6rem}
 
-/* Layout helpers */
-.wrap{max-width:var(--maxw); margin:0 auto; padding:0 18px}
-
+/* 41 ────────────────────────────────────────────────────────────────── */
 /* Header */
 .site-header{
-  position:sticky; top:0; z-index:10;
-  background:rgba(31,58,41,.96);
-  color:var(--bg);
-  border-bottom:1px solid rgba(0,0,0,.08);
-  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--olive);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,.12);
 }
+
 .site-header .wrap{
-  display:flex; align-items:center; gap:12px; padding:10px 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.logo{height:50px; width:auto; display:block}
-.spacer{flex:1}
-.lang-label{margin-right:6px; font-weight:600; color:#EBD9A4}
+
+.logo{
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  background: #fff3;
+  padding: 4px;
+}
+
+.spacer{ flex: 1; }
+
+.lang-label{
+  margin-right: 8px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
 #languageSwitcher{
-  padding:.5rem .75rem; border-radius:10px; border:1px solid rgba(255,255,255,.3);
-  background:transparent; color:#F6EDCF; font-weight:600
+  appearance: none;
+  -webkit-appearance: none;
+  background: #f1f5f3;
+  color: var(--olive);
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: inset 0 0 0 1px #00000014;
+  cursor: pointer;
 }
 
-/* Hero */
-.hero {
+/* 97 ────────────────────────────────────────────────────────────────── */
+/* HERO (responsive picture) */
+.hero{
   position: relative;
-  text-align: center;
-  color: #1F3A29; /* deep olive green */
+  overflow: hidden;
+  min-height: clamp(360px, 52vh, 540px); /* fits in 1 screen on most devices */
 }
 
-.hero-img {
+.hero picture,
+.hero .hero-img{
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
-.hero-text {
+.hero .hero-img{
+  object-fit: cover;
+  object-position: center top; /* keep logo & tree high in frame */
+}
+
+/* Text overlay */
+.hero-text{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(224, 194, 126, 0.6); /* translucent gold */
-  padding: 10px 20px;
-  border-radius: 6px;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: var(--olive);
 }
 
+/* IMPORTANT: hero artwork already has the large title.
+   Keep subtitle only. If you export an image WITHOUT text,
+   remove this rule to show the HTML H1 again. */
+.hero-text h1{ display: none; }
 
-/* Sections */
-.section{margin:28px 0}
+.hero-text p{
+  font-weight: 600;
+  font-size: clamp(14px, 1.6vw, 18px);
+  letter-spacing: .02em;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(224,194,126,0.4);
+}
+
+/* 159 ───────────────────────────────────────────────────────────────── */
+/* Layout / Content blocks */
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 16px;
+}
+
+.section{
+  margin: 28px 0;
+}
+
 .block{
-  display:grid; gap:18px; grid-template-columns: 1.1fr .9fr; align-items:center;
-  background:var(--panel); border-radius:16px; padding:16px; border:1px solid rgba(0,0,0,.08);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  background: linear-gradient(180deg, #f6e7bd 0%, #f0db9d 100%);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow);
 }
-.block.reverse{grid-template-columns: .9fr 1.1fr}
-.block.reverse .text{order:2}
-.block.reverse .media{order:1}
-.text p{margin:0}
+
+.block.reverse{
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.text{
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.media{
+  margin: 0;
+  display: block;
+}
+
 .media img{
-  width:100%; height:100%; object-fit:cover;
-  border-radius:12px; box-shadow:0 10px 24px rgba(0,0,0,.12)
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 14px 30px rgba(0,0,0,.15);
 }
 
-/* Contact card */
+/* 267 ───────────────────────────────────────────────────────────────── */
+/* Typography */
+h1, h2, h3{
+  font-family: "Cinzel", Garamond, Georgia, serif;
+  margin: 0 0 6px;
+  color: var(--olive);
+}
+
+h1{
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+h2{
+  font-weight: 700;
+  font-size: clamp(22px, 2.2vw, 28px);
+  letter-spacing: .02em;
+  text-transform: none; /* keep elegant look */
+}
+
+p{
+  margin: 0;
+  color: var(--olive-ink);
+  font-size: clamp(15px, 1.05rem, 18px);
+}
+
+/* 319 ───────────────────────────────────────────────────────────────── */
+/* Contact card & footer */
 .contact-card{
-  background:var(--panel);
-  border:1px solid rgba(0,0,0,.08);
-  border-radius:16px; padding:18px;
+  background: linear-gradient(180deg, #f6e7bd 0%, #f0db9d 100%);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow);
 }
-.contact-card a{color:var(--ink-soft); font-weight:700}
 
-/* Footer */
+.contact-card a{
+  color: var(--olive);
+  font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--olive);
+}
+
 .site-footer{
-  background:rgba(31,58,41,1);
-  color:#EBD9A4;
-  padding:14px 0; margin-top:26px; font-size:.92rem;
-  border-top:1px solid rgba(0,0,0,.1)
-}
-.footgrid{display:flex; justify-content:center}
-
-/* Mobile first adjustments */
-@media (max-width: 900px){
-  .block, .block.reverse{grid-template-columns: 1fr}
-  .block.reverse .text{order:1}
-  .block.reverse .media{order:2}
-  .site-header .wrap{gap:10px}
-  .logo{height:44px}
+  background: #e9d39e;
+  border-top: 1px solid #d6b66b;
 }
 
-/* Even smaller phones */
-@media (max-width: 420px){
-  #languageSwitcher{font-size:.9rem}
-  .lang-label{display:none}
+.site-footer .wrap{
+  padding: 22px 16px;
+}
+
+.footgrid{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+small{
+  color: var(--olive-ink);
+}
+
+/* 367 ───────────────────────────────────────────────────────────────── */
+/* Responsive */
+@media (max-width: 1024px){
+  .block{ grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px){
+  .site-header .wrap{ padding: 10px 12px; }
+  .logo{ width: 48px; height: 48px; }
+  .block,
+  .block.reverse{
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px;
+  }
+  .media img{ max-height: 340px; }
+  .hero{
+    min-height: clamp(380px, 60vh, 520px);
+  }
+  .hero .hero-img{
+    object-position: center 8%;
+  }
 }

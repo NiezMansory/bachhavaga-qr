@@ -44,14 +44,28 @@ h2{font-size:clamp(20px,3.6vw,30px); margin:.2rem 0 .6rem}
 }
 
 /* Hero */
-.hero{
-  min-height:52vh; display:grid; place-items:center;
-  background-size:cover; background-position:center;
-  position:relative;
+.hero {
+  position: relative;
+  text-align: center;
+  color: #1F3A29; /* deep olive green */
 }
-.hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.25))}
-.hero .overlay{position:relative; z-index:1; text-align:center; color:#fff; padding:26px}
-.title{margin:0}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(224, 194, 126, 0.6); /* translucent gold */
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
 
 /* Sections */
 .section{margin:28px 0}

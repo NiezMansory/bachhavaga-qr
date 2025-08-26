@@ -32,18 +32,18 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <picture>
-      <!-- Mobile first -->
-      <source media="(max-width: 768px)" srcset="images/hero-mobile.png">
-      <!-- Desktop -->
-      <img src="images/hero-desktop.png" alt="Bacchavaga Olive Oil Hero" class="hero-img">
-    </picture>
-    <div class="hero-text">
-      <h1>Premium Organic Olive Oil from Tunisia</h1>
-      <p>The Heritage of Vaga</p>
-    </div>
-  </section>
+<section class="hero">
+  <picture>
+    <!-- Desktop first -->
+    <source media="(min-width: 769px)" srcset="images/hero-desktop.png">
+    <!-- Fallback = mobile -->
+    <img src="images/hero-mobile.png" alt="Bacchavaga Olive Oil Hero" class="hero-img">
+  </picture>
+
+  <!-- Hide this overlay for now because text is inside the artwork -->
+  <div class="hero-text" aria-hidden="true"></div>
+</section>
+
 
   <!-- Main -->
   <main class="wrap">

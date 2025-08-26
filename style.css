@@ -2,19 +2,8 @@
    Bacchavaga QR Microsite Styles
    Color scheme: parchment gold (#E0C27E) + deep olive (#1F3A29)
    Fonts: Cinzel (headings), Inter (body)
-   -------------------------------------------------------------------------
-   QUICK NAV (approx. line numbers once pasted):
-     01–40   Base / tokens
-     41–96   Header (logo + language)
-     97–158  HERO (height/crop + hide H1 over image)
-     159–266 Layout: sections, cards, media images
-     267–318 Typography
-     319–366 Utilities / footer
-     367–420 Responsive tweaks
    ========================================================================= */
 
-
-/* 01 ────────────────────────────────────────────────────────────────── */
 /* Base tokens */
 :root{
   --parchment: #E0C27E;
@@ -28,11 +17,7 @@
 }
 
 *{ box-sizing: border-box; }
-
-html, body{
-  height: 100%;
-}
-
+html, body{ height: 100%; }
 body{
   margin: 0;
   background: var(--parchment);
@@ -43,7 +28,6 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 41 ────────────────────────────────────────────────────────────────── */
 /* Header */
 .site-header{
   position: sticky;
@@ -53,7 +37,6 @@ body{
   color: #fff;
   box-shadow: 0 4px 16px rgba(0,0,0,.12);
 }
-
 .site-header .wrap{
   max-width: 1200px;
   margin: 0 auto;
@@ -62,94 +45,43 @@ body{
   align-items: center;
   gap: 12px;
 }
-
 .logo{
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  display: block;
-  border-radius: 8px;
-  background: #fff3;
-  padding: 4px;
+  width: 56px; height: 56px;
+  object-fit: contain; display: block;
+  border-radius: 8px; background: #fff3; padding: 4px;
 }
-
 .spacer{ flex: 1; }
-
-.lang-label{
-  margin-right: 8px;
-  font-weight: 600;
-  letter-spacing: .02em;
-}
-
+.lang-label{ margin-right: 8px; font-weight: 600; letter-spacing: .02em; }
 #languageSwitcher{
-  appearance: none;
-  -webkit-appearance: none;
-  background: #f1f5f3;
-  color: var(--olive);
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 14px;
-  box-shadow: inset 0 0 0 1px #00000014;
-  cursor: pointer;
+  appearance: none; -webkit-appearance: none;
+  background: #f1f5f3; color: var(--olive);
+  font-weight: 600; border: none; border-radius: 10px;
+  padding: 10px 14px; box-shadow: inset 0 0 0 1px #00000014; cursor: pointer;
 }
 
-/* 97 ────────────────────────────────────────────────────────────────── */
-/* HERO (responsive picture) */
+/* HERO – single, consolidated version */
 .hero{
   position: relative;
   overflow: hidden;
-  min-height: clamp(360px, 52vh, 540px); /* fits in 1 screen on most devices */
+  /* Mobile-first height (updated below for desktop) */
+  min-height: clamp(380px, 60vh, 520px);
 }
-
 .hero picture,
-.hero .hero-img{
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
+.hero .hero-img{ width:100%; height:100%; display:block; }
 .hero .hero-img{
   object-fit: cover;
-  object-position: center top; /* keep logo & tree high in frame */
+  object-position: center 8%; /* nice crop for mobile */
 }
+/* Remove overlay since artwork has title */
+.hero-text{ display:none; }
 
-/* Text overlay */
-.hero-text{
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  padding: 1rem;
-  color: var(--olive);
-}
-
-/* IMPORTANT: hero artwork already has the large title.
-   Keep subtitle only. If you export an image WITHOUT text,
-   remove this rule to show the HTML H1 again. */
-.hero-text h1{ display: none; }
-
-.hero-text p{
-  font-weight: 600;
-  font-size: clamp(14px, 1.6vw, 18px);
-  letter-spacing: .02em;
-  margin: 0;
-  text-shadow: 0 1px 0 rgba(224,194,126,0.4);
-}
-
-/* 159 ───────────────────────────────────────────────────────────────── */
 /* Layout / Content blocks */
 .wrap{
   max-width: 1200px;
   margin: 0 auto;
   padding: 28px 16px;
 }
-
-.section{
-  margin: 28px 0;
-}
-
+.section{ margin: 28px 0; }
 .block{
   display: grid;
   grid-template-columns: 1.2fr 1fr;
@@ -159,144 +91,64 @@ body{
   padding: 28px;
   box-shadow: var(--shadow);
 }
-
-.block.reverse{
-  grid-template-columns: 1fr 1.2fr;
-}
-
-.text{
-  display: grid;
-  align-content: start;
-  gap: 10px;
-}
-
-.media{
-  margin: 0;
-  display: block;
-}
-
+.block.reverse{ grid-template-columns: 1fr 1.2fr; }
+.text{ display: grid; align-content: start; gap: 10px; }
+.media{ margin: 0; display: block; }
 .media img{
-  width: 100%;
-  height: 100%;
-  max-height: 420px;
-  object-fit: cover;
-  border-radius: var(--radius-lg);
+  width: 100%; height: 100%; max-height: 420px;
+  object-fit: cover; border-radius: var(--radius-lg);
   box-shadow: 0 14px 30px rgba(0,0,0,.15);
 }
 
-/* 267 ───────────────────────────────────────────────────────────────── */
 /* Typography */
 h1, h2, h3{
   font-family: "Cinzel", Garamond, Georgia, serif;
-  margin: 0 0 6px;
-  color: var(--olive);
+  margin: 0 0 6px; color: var(--olive);
 }
-
-h1{
-  font-weight: 700;
-  letter-spacing: .02em;
-}
-
+h1{ font-weight: 700; letter-spacing: .02em; }
 h2{
-  font-weight: 700;
-  font-size: clamp(22px, 2.2vw, 28px);
-  letter-spacing: .02em;
-  text-transform: none; /* keep elegant look */
+  font-weight: 700; font-size: clamp(22px, 2.2vw, 28px);
+  letter-spacing: .02em; text-transform: none;
 }
+p{ margin: 0; color: var(--olive-ink); font-size: clamp(15px, 1.05rem, 18px); }
 
-p{
-  margin: 0;
-  color: var(--olive-ink);
-  font-size: clamp(15px, 1.05rem, 18px);
-}
-
-/* 319 ───────────────────────────────────────────────────────────────── */
 /* Contact card & footer */
 .contact-card{
   background: linear-gradient(180deg, #f6e7bd 0%, #f0db9d 100%);
   border-radius: var(--radius-lg);
-  padding: 28px;
-  box-shadow: var(--shadow);
+  padding: 28px; box-shadow: var(--shadow);
 }
-
 .contact-card a{
-  color: var(--olive);
-  font-weight: 700;
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 2px solid var(--olive);
+  color: var(--olive); font-weight: 700; text-decoration: none;
+  padding-bottom: 2px; border-bottom: 2px solid var(--olive);
 }
+.site-footer{ background: #e9d39e; border-top: 1px solid #d6b66b; }
+.site-footer .wrap{ padding: 22px 16px; }
+.footgrid{ display: flex; justify-content: center; text-align: center; }
+small{ color: var(--olive-ink); }
 
-.site-footer{
-  background: #e9d39e;
-  border-top: 1px solid #d6b66b;
-}
-
-.site-footer .wrap{
-  padding: 22px 16px;
-}
-
-.footgrid{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-small{
-  color: var(--olive-ink);
-}
-
-/* 367 ───────────────────────────────────────────────────────────────── */
 /* Responsive */
 @media (max-width: 1024px){
   .block{ grid-template-columns: 1fr 1fr; }
 }
-
 @media (max-width: 768px){
   .site-header .wrap{ padding: 10px 12px; }
   .logo{ width: 48px; height: 48px; }
-  .block,
-  .block.reverse{
-    grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 18px;
+  .block, .block.reverse{
+    grid-template-columns: 1fr; gap: 16px; padding: 18px;
   }
   .media img{ max-height: 340px; }
-  .hero{
-    min-height: clamp(380px, 60vh, 520px);
-  }
-  .hero .hero-img{
-    object-position: center 8%;
-  }
-}
-/* --- Hero: fit 1 screen and show logo/tree high --- */
-.hero{
-  position: relative;
-  overflow: hidden;
-  min-height: clamp(360px, 52vh, 540px);
-}
-.hero picture,
-.hero .hero-img{ width:100%; height:100%; display:block; }
-.hero .hero-img{
-  object-fit: cover;
-  object-position: center top;
-}
-
-/* Hide hero overlay completely because the image already has text */
-.hero-text{ display:none; }
-
-/* Mobile tweaks */
-@media (max-width: 768px){
   .hero{ min-height: clamp(380px, 60vh, 520px); }
   .hero .hero-img{ object-position: center 8%; }
 }
-/* Desktop hero adjustment only */
+
+/* Desktop hero fit: show full logo + tree in one viewport */
 @media (min-width: 1025px){
-  .hero {
-    min-height: 68vh;              /* Taller so logo + tree fit in view */
+  .hero{
+    /* slightly shorter than mobile so it fits under sticky header */
+    min-height: clamp(420px, 62vh, 680px);
   }
-  .hero .hero-img {
-    object-fit: cover;             /* Keep premium full-bleed look */
-    object-position: center 6%;    /* Shift upward so logo sits closer to top */
+  .hero .hero-img{
+    object-position: center 6%; /* nudge up so logo sits higher */
   }
 }

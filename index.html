@@ -32,11 +32,19 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" style="background-image:url('images/hero.jpg')">
-    <div class="overlay">
-      <h1 id="h-hero" class="title">Premium Organic Olive Oil from Tunisia – The Heritage of Vaga</h1>
-    </div>
-  </section>
+  <section class="hero">
+  <picture>
+    <!-- Mobile first -->
+    <source media="(max-width: 768px)" srcset="images/hero-mobile.png">
+    <!-- Desktop -->
+    <img src="images/hero-desktop.png" alt="Bacchavaga Olive Oil Hero" class="hero-img">
+  </picture>
+  <div class="hero-text">
+    <h1>Premium Organic Olive Oil from Tunisia</h1>
+    <p>The Heritage of Vaga</p>
+  </div>
+</section>
+
 
   <!-- Main -->
   <main class="wrap">

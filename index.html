@@ -31,19 +31,15 @@
     </div>
   </header>
 
-  <!-- Hero -->
-<section class="hero">
-  <picture>
-    <!-- Desktop first -->
-    <source media="(min-width: 769px)" srcset="images/hero-desktop.png">
-    <!-- Fallback = mobile -->
-    <img src="images/hero-mobile.png" alt="Bacchavaga Olive Oil Hero" class="hero-img">
-  </picture>
-
-  <!-- Hide this overlay for now because text is inside the artwork -->
-  <div class="hero-text" aria-hidden="true"></div>
-</section>
-
+  <!-- Hero (no overlay text) -->
+  <section class="hero">
+    <picture>
+      <!-- Mobile -->
+      <source media="(max-width: 768px)" srcset="images/hero-mobile.png">
+      <!-- Desktop -->
+      <img src="images/hero-desktop.png" alt="Bacchavaga Olive Oil Hero" class="hero-img">
+    </picture>
+  </section>
 
   <!-- Main -->
   <main class="wrap">
@@ -65,7 +61,7 @@
         <p id="p-organic"></p>
       </div>
       <figure class="media">
-        <img src="images/organic.jpg" alt="Organic Tunisian olive trees" />
+        <img src="images/family.jpg" alt="Organic Tunisian olive trees" />
       </figure>
     </section>
 
@@ -98,7 +94,7 @@
         <p id="p-sustainability"></p>
       </div>
       <figure class="media">
-        <img src="images/sustainability.jpg" alt="Sustainable farming in Tunisia" />
+        <img src="images/family.jpg" alt="Sustainable farming in Tunisia" />
       </figure>
     </section>
 
@@ -109,7 +105,7 @@
         <p id="p-vision"></p>
       </div>
       <figure class="media">
-        <img src="images/vision.jpg" alt="From Vaga to your table" />
+        <img src="images/hero.jpg" alt="From Vaga to your table" />
       </figure>
     </section>
 

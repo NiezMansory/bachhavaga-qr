@@ -1,145 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bacchavaga Olive Oil</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Styles & Script -->
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-
-  <!-- Favicon / Social -->
-  <link rel="icon" href="images/logo.png" type="image/png">
-  <link rel="apple-touch-icon" href="images/logo.png">
-  <meta property="og:title" content="Bacchavaga – Premium Organic Olive Oil">
-  <meta property="og:description" content="From Tunisia’s ancient olive groves to your table. Discover the story of Bacchavaga.">
-  <meta property="og:image" content="images/hero-desktop.png">
-  <meta property="og:type" content="website">
 </head>
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="wrap">
-      <img class="logo" src="images/logo.png" alt="Bacchavaga logo" />
-      <div class="spacer"></div>
-      <label class="lang-label" for="languageSwitcher">Language</label>
-      <select id="languageSwitcher" class="lang-select" aria-label="Language"></select>
+  <header class="topbar">
+    <div class="brand">
+      <img src="images/logo.png" alt="Bacchavaga" onerror="this.style.display='none'">
+      <span>Bacchavaga Olive Oil</span>
+    </div>
+
+    <!-- Language switcher -->
+    <div class="lang">
+      <button id="langCurrent" class="lang-current" aria-haspopup="listbox" aria-expanded="false">
+        <span id="langFlag">🇬🇧</span>
+        <span id="langName">English</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"></path></svg>
+      </button>
+      <ul id="langList" class="lang-list" role="listbox" aria-label="Language">
+        <li data-lang="en">🇬🇧 English</li>
+        <li data-lang="de">🇩🇪 Deutsch</li>
+        <li data-lang="fr">🇫🇷 Français</li>
+        <li data-lang="it">🇮🇹 Italiano</li>
+        <li data-lang="es">🇪🇸 Español</li>
+        <li data-lang="tr">🇹🇷 Türkçe</li>
+        <li data-lang="nl">🇳🇱 Nederlands</li>
+        <li data-lang="pl">🇵🇱 Polski</li>
+        <li data-lang="ru">🇷🇺 Русский</li>
+        <li data-lang="ar">🇸🇦 العربية</li>
+      </ul>
     </div>
   </header>
 
-  <!-- Hero (artwork contains title) -->
-  <section class="hero" aria-label="Bacchavaga hero">
-    <picture>
-      <!-- Mobile -->
-      <source media="(max-width: 768px)" srcset="images/hero-mobile.png">
-      <!-- Desktop -->
-      <img src="images/hero-desktop.png" alt="Bacchavaga Olive Oil — hero artwork" class="hero-img">
-    </picture>
+  <section class="hero">
+    <h1 data-i18n="hero_title">Extra-virgin olive oil from Béja, Tunisia</h1>
+    <p class="muted" data-i18n="hero_sub">Single-origin · Cold-extracted · Family owned</p>
   </section>
 
-  <!-- Main -->
-  <main class="wrap">
-    <!-- Story -->
-    <section class="section block">
-      <div class="text">
-        <h2 id="t-hero">Premium Organic Olive Oil from Tunisia – The Heritage of Vaga</h2>
-        <p id="p-story"></p>
-      </div>
-      <figure class="media">
-        <img src="images/family.jpg" alt="Family olive farming heritage in Béja" />
-      </figure>
-    </section>
+  <main class="container">
+    <article class="card">
+      <h2 data-i18n="organic_title">Organic Olive Trees</h2>
+      <p data-i18n="organic_text">
+        Tunisia is home to some of the world’s oldest organic olive trees, thriving in mineral-rich soils and Mediterranean sun.
+      </p>
+    </article>
 
-    <!-- Organic -->
-    <section class="section block reverse">
-      <div class="text">
-        <h2 id="t-organic">Organic Olive Trees</h2>
-        <p id="p-organic"></p>
-      </div>
-      <figure class="media">
-        <img src="images/organic.jpg" alt="Organic Tunisian olive trees" />
-      </figure>
-    </section>
+    <article class="card">
+      <h2 data-i18n="harvest_title">Traditional Harvest</h2>
+      <p data-i18n="harvest_text">
+        Our olives are hand-picked using traditional methods to protect both fruit and trees, ensuring exceptional quality.
+      </p>
+    </article>
 
-    <!-- Harvest -->
-    <section class="section block">
-      <div class="text">
-        <h2 id="t-harvest">Traditional Harvest</h2>
-        <p id="p-harvest"></p>
-      </div>
-      <figure class="media">
-        <img src="images/harvest.jpg" alt="Hand harvest with women farmers" />
-      </figure>
-    </section>
+    <article class="card">
+      <h2 data-i18n="extraction_title">Cold Extraction</h2>
+      <p data-i18n="extraction_text">
+        Within hours of harvest, we cold-extract to preserve aromas, polyphenols, and the vibrant green-gold color.
+      </p>
+    </article>
 
-    <!-- Awards -->
-    <section class="section block reverse">
-      <div class="text">
-        <h2 id="t-awards">Awards & Recognition</h2>
-        <p id="p-awards"></p>
-      </div>
-      <figure class="media">
-        <img src="images/awards.jpg" alt="International olive oil awards" />
-      </figure>
-    </section>
+    <article class="card">
+      <h2 data-i18n="taste_title">Taste & Pairing</h2>
+      <p data-i18n="taste_text">
+        Balanced fruitiness with gentle bitterness and a peppery finish; perfect for salads, grilled fish, and dipping.
+      </p>
+    </article>
 
-    <!-- Sustainability -->
-    <section class="section block">
-      <div class="text">
-        <h2 id="t-sustainability">Sustainability</h2>
-        <p id="p-sustainability"></p>
-      </div>
-      <figure class="media">
-        <img src="images/sustainability.jpg" alt="Sustainable farming in Tunisia" />
-      </figure>
-    </section>
+    <article class="card">
+      <h2 data-i18n="origin_title">Origin & Family</h2>
+      <p data-i18n="origin_text">
+        Grown and bottled by our family in Béja, north-west Tunisia, where the Mediterranean breeze shapes a unique terroir.
+      </p>
+    </article>
 
-    <!-- Vision -->
-    <section class="section block reverse">
-      <div class="text">
-        <h2 id="t-vision">Our Vision</h2>
-        <p id="p-vision"></p>
-      </div>
-      <figure class="media">
-        <img src="images/vision.jpg" alt="From Vaga to your table" />
-      </figure>
-    </section>
+    <article class="card">
+      <h2 data-i18n="nutrition_title">Nutrition (per 100 ml)</h2>
+      <ul class="nutri" aria-label="nutrition">
+        <li><strong data-i18n="nut_energy_label">Energy</strong>: <span data-i18n="nut_energy_val">3389 kJ / 824 kcal</span></li>
+        <li><strong data-i18n="nut_fat_label">Fat</strong>: <span data-i18n="nut_fat_val">91 g</span></li>
+        <li><strong data-i18n="nut_sat_label">of which saturates</strong>: <span data-i18n="nut_sat_val">14 g</span></li>
+        <li><strong data-i18n="nut_mono_label">monounsaturates</strong>: <span data-i18n="nut_mono_val">71 g</span></li>
+        <li><strong data-i18n="nut_poly_label">polyunsaturates</strong>: <span data-i18n="nut_poly_val">6 g</span></li>
+        <li><strong data-i18n="nut_carbs_label">Carbohydrate</strong>: <span data-i18n="nut_carbs_val">0 g</span></li>
+        <li><strong data-i18n="nut_protein_label">Protein</strong>: <span data-i18n="nut_protein_val">0 g</span></li>
+        <li><strong data-i18n="nut_salt_label">Salt</strong>: <span data-i18n="nut_salt_val">0 g</span></li>
+      </ul>
+    </article>
 
-    <!-- Astuce / Expert Advice -->
-    <section class="section block">
-      <div class="text">
-        <h2 id="t-astuce">Bacchavaga’s Expert Advice – Choose Exceptional Olive Oil</h2>
-        <ul class="astuce-list">
-          <li id="a1"></li>
-          <li id="a2"></li>
-          <li id="a3"></li>
-          <li id="a4"></li>
-          <li id="a5"></li>
-          <li id="a6"></li>
-          <li id="a7"></li>
-        </ul>
-      </div>
-      <figure class="media">
-        <img src="images/astuce.jpg" alt="Expert tips on choosing olive oil" />
-      </figure>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact-card">
-      <h2 id="t-contact">Contact</h2>
-      <p id="p-contact">For inquiries: <a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a></p>
-    </section>
+    <article class="card">
+      <h2 data-i18n="bottling_title">Bottling & Contact</h2>
+      <p data-i18n="bottling_text">
+        Bottled by Mansory Olives, Béja, Tunisia. For batch info and our story, scan the QR code or visit bacchavaga-qr.de.
+      </p>
+    </article>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="wrap footgrid">
-      <small>© 2025 Bacchavaga — Mansory Global SARL · Béja (Vaga), Tunisia. All Rights Reserved.</small>
-    </div>
+  <footer class="footer">
+    <small data-i18n="footer_note">© Bacchavaga — All rights reserved.</small>
   </footer>
+
+  <script src="translations.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

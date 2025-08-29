@@ -174,3 +174,14 @@ small{ color: var(--olive-ink); }
   .hero{ min-height: clamp(420px, 62vh, 680px); }
   .hero .hero-img{ object-position: center 6%; }
 }
+/* ---- Language selector desktop hover polish ---- */
+@media (min-width: 1025px){
+  .lang-select{
+    font-size: 16px;
+    padding: 14px 48px 14px 18px;
+    min-width: 200px;
+  }
+  .lang-select:hover{
+    transform: scale(1.02);
+  }
+}

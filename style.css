@@ -29,7 +29,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Header */
+/* ===================== Header ===================== */
 .site-header{
   position: sticky;
   top: 0;
@@ -72,13 +72,13 @@ body{
   border: 1px solid #ffffff66;
   border-radius: 999px;
   padding: 10px 16px;
-  min-width: 190px;
+  min-width: 200px;
   box-shadow: inset 0 0 0 1px #00000022;
   cursor: pointer;
 }
 #languageSwitcher option{ color:#000; }
 
-/* HERO */
+/* ===================== HERO ===================== */
 .hero{
   position: relative;
   overflow: hidden;
@@ -92,7 +92,7 @@ body{
   object-position: center 6%;
 }
 
-/* Content blocks */
+/* ===================== Content blocks ===================== */
 .wrap{
   max-width: 1200px;
   margin: 0 auto;
@@ -121,11 +121,65 @@ body{
   box-shadow: 0 14px 30px rgba(0,0,0,.15);
 }
 
-/* Tips list */
-.tips{ margin: 6px 0 0; padding-left: 1.1rem; }
-.tips li{ margin: .25rem 0; }
+/* ===================== Tips list (iOS-style bubbles + animation) ===================== */
+.tips{
+  list-style: none;
+  counter-reset: step;
+  margin: 10px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.tips li{
+  position: relative;
+  padding: 10px 12px 10px 48px;
+  padding-inline-start: 48px;
+  padding-inline-end: 12px;
+  background: linear-gradient(180deg, #fff7 0%, #fff3 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.06), inset 0 1px 0 rgba(255,255,255,.5);
+  line-height: 1.45;
 
-/* Typography */
+  /* Animation setup */
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+.tips li::before{
+  content: counter(step);
+  counter-increment: step;
+  position: absolute;
+  inset-inline-start: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: #1F3A29;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 14px rgba(31,58,41,.22), inset 0 -2px 0 rgba(255,255,255,.2);
+}
+
+/* Keyframes for bubble fade-in */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Stagger the animations */
+.tips li:nth-child(1){ animation-delay: 0.1s; }
+.tips li:nth-child(2){ animation-delay: 0.25s; }
+.tips li:nth-child(3){ animation-delay: 0.4s; }
+.tips li:nth-child(4){ animation-delay: 0.55s; }
+.tips li:nth-child(5){ animation-delay: 0.7s; }
+.tips li:nth-child(6){ animation-delay: 0.85s; }
+.tips li:nth-child(7){ animation-delay: 1s; }
+
+/* ===================== Typography ===================== */
 h1, h2, h3{
   font-family: "Cinzel", Garamond, Georgia, serif;
   margin: 0 0 6px;
@@ -141,19 +195,7 @@ p{
   font-size: clamp(15px, 1.05rem, 18px);
 }
 
-/* Never truncate translated text */
-h1,h2,h3,p,li,.tips li{
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: clip !important;
-  -webkit-line-clamp: unset !important;
-  -webkit-box-orient: unset !important;
-  display: block !important;
-  word-break: normal;
-  overflow-wrap: anywhere;
-}
-
-/* Contact & footer */
+/* ===================== Contact & footer ===================== */
 .contact-card{
   background: linear-gradient(180deg, #f6e7bd 0%, #f0db9d 100%);
   border-radius: var(--radius-lg);
@@ -175,7 +217,7 @@ h1,h2,h3,p,li,.tips li{
 .footgrid{ display: flex; justify-content: center; text-align: center; }
 small{ color: var(--olive-ink); }
 
-/* Responsive */
+/* ===================== Responsive ===================== */
 @media (max-width: 1024px){
   .block{ grid-template-columns: 1fr 1fr; }
 }
@@ -189,4 +231,8 @@ small{ color: var(--olive-ink); }
   .media img{ max-height: 340px; }
   .hero{ min-height: clamp(380px, 60vh, 520px); }
   .hero .hero-img{ object-position: center 8%; }
+
+  /* tips tightening on mobile */
+  .tips li{ padding-inline-start: 44px; border-radius: 12px; }
+  .tips li::before{ width: 26px; height: 26px; font-size: 13px; }
 }

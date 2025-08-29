@@ -200,6 +200,159 @@ const translations = {
     vision: `Bacchavaga ليست مجرد زيت زيتون؛ إنها قصة عائلة وإرث وفخر. من بساتين فاغا العتيقة إلى موائدكم، ندعوكم لمشاركة رحلةٍ اعتنينا بها عبر القرون.`,
     contact: `للاستفسار: info@bacchavaga.de`
   }
+const translations = {
+  en: {
+    titles: {
+      // ...existing
+      astuce: "Bacchavaga’s Expert Advice – Choose Exceptional Olive Oil",
+    },
+    astuce: [
+      "Always choose extra virgin: cold-pressed, chemical-free; highest in natural antioxidants and polyphenols.",
+      "Prefer an opaque bottle: light damages flavour and nutrients; dark glass or tin protects the oil from mill to kitchen.",
+      "Check the harvest date: oil doesn’t age like wine; pick the latest harvest; enjoy within a year and within 3–4 months after opening.",
+      "Trust certified origin and traceability: PDO/PGI or clearly stated single origin.",
+      "Look for low acidity: < 0.8% (top oils often ~0.3%) — a sign of careful picking and fast cold-pressing.",
+      "Think polyphenols & health: fresh, well-stored extra virgin supports heart health and reduces oxidative stress.",
+      "Avoid blends: single-origin preserves the grove’s character — Bacchavaga is never blended."
+    ],
+  },
+
+  fr: {
+    titles: {
+      astuce: "L’Astuce d’Expert Bacchavaga – Bien choisir son huile d’olive",
+    },
+    astuce: [
+      "Choisir l’extra-vierge : pressée à froid, sans solvants ; la plus riche en antioxydants et polyphénols.",
+      "Privilégier une bouteille opaque : la lumière altère arômes et nutriments ; le verre sombre ou le métal protègent l’huile, du moulin à votre cuisine.",
+      "Vérifier la date de récolte : l’huile ne se bonifie pas ; préférez une récolte récente ; consommez dans l’année et 3–4 mois après ouverture.",
+      "Exiger une origine certifiée et traçable : AOP/IGP ou mention d’une origine unique.",
+      "Observer l’acidité : < 0,8 % (souvent ~0,3 % pour les meilleures) — signe de récolte soignée et d’extraction rapide à froid.",
+      "Penser polyphénols & santé : une extra-vierge fraîche, bien conservée, soutient la santé cardio-vasculaire et réduit le stress oxydatif.",
+      "Éviter les mélanges : l’origine unique préserve l’identité du terroir — Bacchavaga n’est jamais assemblée."
+    ],
+  },
+
+  de: {
+    titles: {
+      astuce: "Bacchavagas Profi-Tipp – So wählen Sie ein herausragendes Olivenöl",
+    },
+    astuce: [
+      "Immer Extra Nativ wählen: kaltgepresst, ohne Chemie; am reichsten an Antioxidantien und Polyphenolen.",
+      "Dunkle Flasche bevorzugen: Licht schadet Aroma und Nährstoffen; dunkles Glas oder Blech schützt vom Mahlwerk bis zur Küche.",
+      "Erntedatum prüfen: Öl reift nicht wie Wein; neueste Ernte wählen; innerhalb eines Jahres und 3–4 Monate nach Öffnung genießen.",
+      "Zertifizierte Herkunft & Rückverfolgbarkeit: g.g.A./g.U. oder klar ausgewiesener Single-Origin.",
+      "Niedrige Säure suchen: < 0,8 % (Top-Öle ~0,3 %) — Zeichen für sorgfältige Ernte und schnelle Kaltpressung.",
+      "An Polyphenole & Gesundheit denken: frisches, gut gelagertes Extra Nativ unterstützt Herzgesundheit und reduziert oxidativen Stress.",
+      "Mischungen meiden: Single-Origin bewahrt den Charakter des Hains — Bacchavaga wird nicht gemischt."
+    ],
+  },
+
+  it: {
+    titles: {
+      astuce: "Consiglio d’Esperto Bacchavaga – Come scegliere un olio d’oliva eccezionale",
+    },
+    astuce: [
+      "Scegli sempre l’extravergine: spremitura a freddo, senza chimica; massima ricchezza di antiossidanti e polifenoli.",
+      "Preferisci bottiglia opaca: la luce danneggia aromi e nutrienti; vetro scuro o lattina proteggono l’olio dal frantoio alla cucina.",
+      "Controlla la data di raccolta: l’olio non invecchia come il vino; scegli il raccolto più recente; consuma entro un anno e 3–4 mesi dall’apertura.",
+      "Affidati a origine certificata e tracciabile: DOP/IGP o origine unica dichiarata.",
+      "Verifica l’acidità: < 0,8% (i migliori ~0,3%) — segno di raccolta accurata e rapida estrazione a freddo.",
+      "Pensa ai polifenoli & salute: extravergine fresco e ben conservato sostiene il cuore e riduce lo stress ossidativo.",
+      "Evita i blend: il single-origin conserva il carattere dell’oliveto — Bacchavaga non è mai miscelato."
+    ],
+  },
+
+  es: {
+    titles: {
+      astuce: "Consejo Experto de Bacchavaga – Cómo elegir un aceite de oliva excepcional",
+    },
+    astuce: [
+      "Elige siempre virgen extra: extracción en frío, sin químicos; más rico en antioxidantes y polifenoles.",
+      "Prefiere botella opaca: la luz daña sabor y nutrientes; vidrio oscuro o lata protegen el aceite del molino a la cocina.",
+      "Comprueba la fecha de cosecha: el aceite no envejece como el vino; elige la cosecha más reciente; consume en un año y en 3–4 meses tras abrir.",
+      "Confía en el origen certificado y la trazabilidad: DOP/IGP u origen único claramente indicado.",
+      "Mira la acidez: < 0,8% (los mejores ~0,3%) — señal de recolección cuidadosa y prensado en frío rápido.",
+      "Piensa en polifenoles & salud: un virgen extra fresco y bien conservado ayuda al corazón y reduce el estrés oxidativo.",
+      "Evita mezclas: el origen único preserva el carácter del olivar — Bacchavaga no se mezcla."
+    ],
+  },
+
+  tr: {
+    titles: {
+      astuce: "Bacchavaga Uzman Tavsiyesi – Olağanüstü Zeytinyağı Nasıl Seçilir",
+    },
+    astuce: [
+      "Her zaman sızma zeytinyağı seçin: soğuk sıkım, kimyasal yok; en yüksek doğal antioksidan ve polifenol.",
+      "Opak şişeyi tercih edin: ışık aroma ve besinleri bozar; koyu cam veya teneke yağı değirmenden mutfağa korur.",
+      "Hasat tarihine bakın: yağ şarap gibi yıllanmaz; en yeni hasadı seçin; açtıktan sonra 3–4 ay içinde ve üretim yılından önce tüketin.",
+      "Sertifikalı köken ve izlenebilirlik: PDO/PGI (AB) veya açıkça belirtilmiş tek menşei.",
+      "Düşük asit oranı arayın: < %0,8 (üst kalite ~%0,3) — özenli hasat ve hızlı soğuk sıkım göstergesi.",
+      "Polifenoller & sağlık: taze, iyi saklanan sızma yağ kalp sağlığını destekler ve oksidatif stresi azaltır.",
+      "Karışımlardan kaçının: tek menşei, zeytinliğin karakterini korur — Bacchavaga asla karışım değildir."
+    ],
+  },
+
+  nl: {
+    titles: {
+      astuce: "Bacchavaga’s Expertadvies – Zo kies je een uitzonderlijke olijfolie",
+    },
+    astuce: [
+      "Kies altijd extra vierge: koudgeperst, zonder chemicaliën; het rijkst aan antioxidanten en polyfenolen.",
+      "Ga voor een ondoorzichtige fles: licht schaadt smaak en voedingsstoffen; donker glas of blik beschermt van molen tot keuken.",
+      "Controleer de oogstdatum: olie rijpt niet zoals wijn; kies de meest recente oogst; gebruik binnen een jaar en 3–4 maanden na openen.",
+      "Vertrouw op gecertificeerde herkomst & traceerbaarheid: BOB/BGA of duidelijk aangegeven single-origin.",
+      "Let op lage zuurgraad: < 0,8% (topoliën ~0,3%) — teken van zorgvuldige pluk en snelle koude persing.",
+      "Denk aan polyfenolen & gezondheid: verse, goed bewaarde extra vierge ondersteunt het hart en vermindert oxidatieve stress.",
+      "Vermijd blends: single-origin bewaart het karakter van de olijfgaard — Bacchavaga wordt niet gemengd."
+    ],
+  },
+
+  vls: { // Vlaams
+    titles: {
+      astuce: "Bacchavaga’s Experttip – Hoe kies je een uitzonderlike olijfolie",
+    },
+    astuce: [
+      "Kies altij extra vierge: koudgeperst, zonder chemie; ’t rijkst aan antioxidanten en polyfenolen.",
+      "Pak een ondoorschijnende fles: licht schaadt smaak en voedingsstoffen; donker glas of blik beschermt van molen tot keuken.",
+      "Check de oogstdatum: olie rijpt nie gelijk wijn; kies de meest recente en gebruik binnen ’t jaar, best 3–4 maanden na openen.",
+      "Gecertificeerde herkomst & traceerbaar: BOB/BGA of duidelijk single-origin.",
+      "Let op lage zuurte: < 0,8% (top ~0,3%) — teken van zorgvuldige pluk en rappe koude persing.",
+      "Polyfenolen & gezondheid: verse, goe bewaarde extra vierge ondersteunt ’t hart en vermindert oxidatieve stress.",
+      "Vermijd mengelingen: single-origin bewaart ’t karakter van de gaard — Bacchavaga wordt nie gemengd."
+    ],
+  },
+
+  pl: {
+    titles: {
+      astuce: "Porada Ekspercka Bacchavaga – Jak wybrać wyjątkową oliwę",
+    },
+    astuce: [
+      "Wybieraj zawsze extra virgin: tłoczona na zimno, bez chemii; najbogatsza w przeciwutleniacze i polifenole.",
+      "Butelka nieprzezroczysta: światło szkodzi aromatowi i składnikom; ciemne szkło lub puszka chronią od młyna po kuchnię.",
+      "Sprawdź datę zbiorów: oliwa nie starzeje się jak wino; wybieraj najświeższy zbiór; spożyj w ciągu roku i 3–4 miesięcy od otwarcia.",
+      "Zaufaj certyfikowanemu pochodzeniu: ChNP/ChOG lub jasno wskazane jedno źródło.",
+      "Zwracaj uwagę na kwasowość: < 0,8% (top często ~0,3%) — znak szybkiego, starannego tłoczenia na zimno.",
+      "Polifenole & zdrowie: świeża, dobrze przechowywana extra virgin wspiera serce i zmniejsza stres oksydacyjny.",
+      "Unikaj mieszanek: jedno źródło zachowuje charakter gaju — Bacchavaga nie jest mieszana."
+    ],
+  },
+
+  ru: {
+    titles: {
+      astuce: "Совет экспертов Bacchavaga — как выбрать выдающееся оливковое масло",
+    },
+    astuce: [
+      "Всегда выбирайте extra virgin: холодный отжим, без химии; максимум природных антиоксидантов и полифенолов.",
+      "Непрозрачная бутылка: свет ухудшает вкус и питательность; тёмное стекло или жесть защищают масло от мельницы до кухни.",
+      "Проверяйте дату урожая: масло не «выдерживается» как вино; берите самый свежий урожай; используйте в течение года и 3–4 месяцев после открытия.",
+      "Сертифицированное происхождение и прослеживаемость: PDO/PGI или чётко указанный единый источник.",
+      "Низкая кислотность: < 0,8% (топ-масла около 0,3%) — признак бережного сбора и быстрой холодной выжимки.",
+      "Полифенолы и здоровье: свежее extra virgin при правильном хранении поддерживает сердце и снижает оксидативный стресс.",
+      "Избегайте смесей: масло одного происхождения сохраняет характер рощи — Bacchavaga не смешивается."
+    ],
+  },
+};
+
 };
 
 /* ---------- DEFENSIVE RENDER / WIRING ---------- */
@@ -214,6 +367,18 @@ const els = {
   tSust: $("t-sustainability"),pSust: $("p-sustainability"),
   tVision: $("t-vision"),      pVision: $("p-vision"),
   tContact: $("t-contact"),    pContact: $("p-contact")
+  const els = {
+  // ...existing refs
+  tAstuce: document.getElementById("t-astuce"),
+  a1: document.getElementById("a1"),
+  a2: document.getElementById("a2"),
+  a3: document.getElementById("a3"),
+  a4: document.getElementById("a4"),
+  a5: document.getElementById("a5"),
+  a6: document.getElementById("a6"),
+  a7: document.getElementById("a7"),
+};
+
 };
 
 function set(node, text, isHTML=false){
@@ -255,6 +420,12 @@ function render(lang){
 
   set(els.tVision,  t.titles.vision);
   set(els.pVision,  t.vision);
+// Astuce section
+if (els.tAstuce) els.tAstuce.textContent = t.titles?.astuce || "Bacchavaga’s Expert Advice – Choose Exceptional Olive Oil";
+const tips = t.astuce || [];
+[els.a1, els.a2, els.a3, els.a4, els.a5, els.a6, els.a7].forEach((el, i) => {
+  if (el) el.textContent = tips[i] || "";
+});
 
   const contactHTML = (t.contact || "info@bacchavaga.de")
     .replace("info@bacchavaga.de", '<a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a>');

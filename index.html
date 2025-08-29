@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,12 +26,12 @@
     <div class="wrap">
       <img class="logo" src="images/logo.png" alt="Bacchavaga logo" />
       <div class="spacer"></div>
-      <label class="lang-label" for="languageSwitcher">Language</label>
+      <label class="lang-label" for="languageSwitcher">Sprache</label>
       <select id="languageSwitcher" aria-label="Language"></select>
     </div>
   </header>
 
-  <!-- Hero (artwork has its own typography; no overlay copy) -->
+  <!-- Hero -->
   <section class="hero">
     <picture>
       <source media="(max-width: 768px)" srcset="images/hero-mobile.png">
@@ -96,7 +96,24 @@
       </figure>
     </section>
 
-    <!-- Advice / Astuce -->
+    <!-- Vision -->
+    <section class="section block reverse-on-mobile">
+      <div class="text">
+        <h2 id="t-vision">Our Vision</h2>
+        <p id="p-vision"></p>
+      </div>
+      <figure class="media">
+        <img src="images/vision.jpg" alt="From Vaga to your table" />
+      </figure>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-card">
+      <h2 id="t-contact">Contact</h2>
+      <p id="p-contact">For inquiries: <a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a></p>
+    </section>
+
+    <!-- Advice / Astuce — LAST -->
     <section class="section block reverse">
       <div class="text">
         <h2 id="t-astuce">Bacchavaga’s Expert Advice – Choose Exceptional Olive Oil</h2>
@@ -113,23 +130,6 @@
       <figure class="media">
         <img src="images/astuce.jpg" alt="Selecting exceptional olive oil" />
       </figure>
-    </section>
-
-    <!-- Vision -->
-    <section class="section block reverse-on-mobile">
-      <div class="text">
-        <h2 id="t-vision">Our Vision</h2>
-        <p id="p-vision"></p>
-      </div>
-      <figure class="media">
-        <img src="images/vision.jpg" alt="From Vaga to your table" />
-      </figure>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact-card">
-      <h2 id="t-contact">Contact</h2>
-      <p id="p-contact">For inquiries: <a href="mailto:info@bacchavaga.de">info@bacchavaga.de</a></p>
     </section>
   </main>
 

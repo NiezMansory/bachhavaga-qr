@@ -152,3 +152,40 @@ small{ color: var(--olive-ink); }
     object-position: center 6%; /* nudge up so logo sits higher */
   }
 }
+/* ── Astuce list (luxury look) ─────────────────────────────────────── */
+.astuce-list{
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  counter-reset: tip;
+  display: grid;
+  gap: 10px;
+}
+.astuce-list li{
+  counter-increment: tip;
+  background: #f8eabc;
+  border: 1px solid #e2c77f;
+  border-radius: 14px;
+  padding: 12px 14px 12px 56px;
+  position: relative;
+  color: var(--olive-ink);
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.astuce-list li::before{
+  content: counter(tip, decimal-leading-zero);
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--olive);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .03em;
+  box-shadow: 0 4px 10px rgba(0,0,0,.12);
+}

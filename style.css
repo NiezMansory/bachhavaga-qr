@@ -1,6 +1,6 @@
 /* =========================================================================
    Bacchavaga QR Microsite Styles
-   Color scheme: parchment gold (#E0C27E) + deep olive (#1F3A29)
+   Color scheme: #E0C27E (parchment) + #1F3A29 (deep olive)
    Fonts: Cinzel (headings), Inter (body)
    ========================================================================= */
 
@@ -59,21 +59,14 @@ body{
   padding: 10px 14px; box-shadow: inset 0 0 0 1px #00000014; cursor: pointer;
 }
 
-/* HERO – single, consolidated version */
+/* HERO */
 .hero{
   position: relative;
   overflow: hidden;
-  /* Mobile-first height (updated below for desktop) */
-  min-height: clamp(380px, 60vh, 520px);
+  min-height: clamp(380px, 60vh, 520px); /* mobile first */
 }
-.hero picture,
-.hero .hero-img{ width:100%; height:100%; display:block; }
-.hero .hero-img{
-  object-fit: cover;
-  object-position: center 8%; /* nice crop for mobile */
-}
-/* Remove overlay since artwork has title */
-.hero-text{ display:none; }
+.hero picture, .hero .hero-img{ width:100%; height:100%; display:block; }
+.hero .hero-img{ object-fit: cover; object-position: center 8%; }
 
 /* Layout / Content blocks */
 .wrap{
@@ -105,11 +98,7 @@ h1, h2, h3{
   font-family: "Cinzel", Garamond, Georgia, serif;
   margin: 0 0 6px; color: var(--olive);
 }
-h1{ font-weight: 700; letter-spacing: .02em; }
-h2{
-  font-weight: 700; font-size: clamp(22px, 2.2vw, 28px);
-  letter-spacing: .02em; text-transform: none;
-}
+h2{ font-weight: 700; font-size: clamp(22px, 2.2vw, 28px); letter-spacing: .02em; }
 p{ margin: 0; color: var(--olive-ink); font-size: clamp(15px, 1.05rem, 18px); }
 
 /* Contact card & footer */
@@ -127,32 +116,7 @@ p{ margin: 0; color: var(--olive-ink); font-size: clamp(15px, 1.05rem, 18px); }
 .footgrid{ display: flex; justify-content: center; text-align: center; }
 small{ color: var(--olive-ink); }
 
-/* Responsive */
-@media (max-width: 1024px){
-  .block{ grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 768px){
-  .site-header .wrap{ padding: 10px 12px; }
-  .logo{ width: 48px; height: 48px; }
-  .block, .block.reverse{
-    grid-template-columns: 1fr; gap: 16px; padding: 18px;
-  }
-  .media img{ max-height: 340px; }
-  .hero{ min-height: clamp(380px, 60vh, 520px); }
-  .hero .hero-img{ object-position: center 8%; }
-}
-
-/* Desktop hero fit: show full logo + tree in one viewport */
-@media (min-width: 1025px){
-  .hero{
-    /* slightly shorter than mobile so it fits under sticky header */
-    min-height: clamp(420px, 62vh, 680px);
-  }
-  .hero .hero-img{
-    object-position: center 6%; /* nudge up so logo sits higher */
-  }
-}
-/* ── Astuce list (luxury look) ─────────────────────────────────────── */
+/* Astuce list (lux look) */
 .astuce-list{
   list-style: none;
   margin: 6px 0 0;
@@ -188,4 +152,25 @@ small{ color: var(--olive-ink); }
   font-size: 14px;
   letter-spacing: .03em;
   box-shadow: 0 4px 10px rgba(0,0,0,.12);
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .block{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px){
+  .site-header .wrap{ padding: 10px 12px; }
+  .logo{ width: 48px; height: 48px; }
+  .block, .block.reverse{
+    grid-template-columns: 1fr; gap: 16px; padding: 18px;
+  }
+  .media img{ max-height: 340px; }
+  .hero{ min-height: clamp(380px, 60vh, 520px); }
+  .hero .hero-img{ object-position: center 8%; }
+}
+
+/* Desktop hero fit */
+@media (min-width: 1025px){
+  .hero{ min-height: clamp(420px, 62vh, 680px); }
+  .hero .hero-img{ object-position: center 6%; }
 }

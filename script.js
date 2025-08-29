@@ -201,7 +201,7 @@ const translations = {
     vision: `Bacchavaga is meer dan olijfolie – het is een verhaal van familie, erfgoed en trots. Van de eeuwenoude olijfgaarden van Vaga tot aan uw tafel: we nodigen u uit om mee te reizen op dit pad dat al eeuwen wordt gekoesterd.`,
     contact: `Vragen: info@bacchavaga.de`,
     astuce: [
-      "Kies altijd extra vierge: koudgeperst, zonder chemicaliën; het rijkst aan antioxidanten en polyphenolen.",
+      "Kies altijd extra vierge: koudgeperst, zonder chemicaliën; het rijkst aan antioxidanten en polyfenolen.",
       "Ga voor een ondoorzichtige fles: licht schaadt smaak en voedingsstoffen; donker glas of blik beschermt van molen tot keuken.",
       "Controleer de oogstdatum: olie rijpt niet zoals wijn; kies de meest recente oogst; gebruik binnen een jaar en 3–4 maanden na openen.",
       "Vertrouw op gecertificeerde herkomst & traceerbaarheid: BOB/BGA of duidelijk aangegeven single-origin.",
@@ -226,7 +226,7 @@ const translations = {
     story: `Od wieków nasza rodzina w Béja (starożytna Vaga) uprawia drzewa oliwne na żyznych, śródziemnomorskich ziemiach Tunezji. Dziedzictwo przekazywane z ojca na syna wyrasta z tradycyjnego rolnictwa – cierpliwości, szacunku do natury i znajomości ziemi. Dziś Bacchavaga kontynuuje tę tradycję, łącząc mądrość przodków z nowoczesnym rozlewem, aby dostarczać autentyczną oliwę mówiącą o historii, czystości i doskonałości.`,
     organic: `Tunezja jest domem jednych z najstarszych organicznych drzew oliwnych na świecie, rosnących naturalnie – bez chemii i sztucznego nawadniania. Nasze gaje są częścią tego unikalnego ekosystemu i dają oliwki bogate w smak oraz składniki odżywcze. Każda kropla Bacchavaga odzwierciedla tę autentyczność: certyfikowana, czysta i uprawiana z troską.`,
     harvest: `Oliwki zbieramy ręcznie, zgodnie z metodami przekazywanymi z pokolenia na pokolenie. Rolnicy – w tym wiele kobiet – starannie zbierają każdą oliwkę, aby zachować jej jakość. W ciągu kilku godzin są tłoczone na zimno, co gwarantuje świeżość i najwyższą jakość w każdej butelce.`,
-    awards: `Tunezyjska oliwa z oliwek jest ceniona na całym świecie i zdobywa liczne międzynarodowe nagrody w Nowym Jorku, Londynie, Tokio i nie tylko. Bacchavaga z dumą jest częścią tej historii – reprezentując tunezyjską doskonałość w smaku, jakości i tradycji.`,
+    awards: `Tunezyjska oliwa z oliwek jest ceniona na całym świecie i zdobywa liczne międzynarodowe nagrody w Nowym Jorku, Londynie, Tokio i nie tylko. Bacchavaga z dumą jest częścią tej historii – reprezentując tunezyjską doskonałość в smaku, jakości i tradycji.`,
     sustainability: `Dbamy o zrównoważoną przyszłość: chronimy glebę, oszczędzamy wodę i wspieramy lokalną społeczność rolniczą. Każda butelka Bacchavaga wspiera tę misję – podtrzymując tradycje i przekazując oliwne dziedzictwo kolejnym pokoleniom.`,
     vision: `Bacchavaga to coś więcej niż oliwa – to opowieść o rodzinie, dziedzictwie i dumie. Od starożytnych gajów Vaga aż po Twój stół – zapraszamy do wspólnej podróży pielęgnowanej przez stulecia.`,
     contact: `Kontakt: info@bacchavaga.de`,

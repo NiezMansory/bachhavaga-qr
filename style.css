@@ -63,7 +63,7 @@ body{
   letter-spacing: .02em;
 }
 
-/* Language select: flag + name, guaranteed width */
+/* Language select */
 #languageSwitcher{
   appearance: none; -webkit-appearance: none;
   background: #1f3a29;
@@ -78,7 +78,7 @@ body{
 }
 #languageSwitcher option{ color:#000; }
 
-/* HERO (artwork image) */
+/* HERO */
 .hero{
   position: relative;
   overflow: hidden;
@@ -89,7 +89,7 @@ body{
 }
 .hero .hero-img{
   object-fit: cover;
-  object-position: center 6%;  /* logo & tree sit higher */
+  object-position: center 6%;
 }
 
 /* Content blocks */
@@ -142,12 +142,15 @@ p{
 }
 
 /* Never truncate translated text */
-h1,h2,h3,p,li{
+h1,h2,h3,p,li,.tips li{
   white-space: normal !important;
   overflow: visible !important;
   text-overflow: clip !important;
   -webkit-line-clamp: unset !important;
   -webkit-box-orient: unset !important;
+  display: block !important;
+  word-break: normal;
+  overflow-wrap: anywhere;
 }
 
 /* Contact & footer */

@@ -141,6 +141,15 @@ p{
   font-size: clamp(15px, 1.05rem, 18px);
 }
 
+/* Never truncate translated text */
+h1,h2,h3,p,li{
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: unset !important;
+}
+
 /* Contact & footer */
 .contact-card{
   background: linear-gradient(180deg, #f6e7bd 0%, #f0db9d 100%);
